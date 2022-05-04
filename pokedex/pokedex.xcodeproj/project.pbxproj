@@ -14,6 +14,9 @@
 		A7999BA12822B69D00B6BCDB /* pokedexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7999BA02822B69D00B6BCDB /* pokedexTests.swift */; };
 		A7999BAB2822B69D00B6BCDB /* pokedexUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7999BAA2822B69D00B6BCDB /* pokedexUITests.swift */; };
 		A7999BAD2822B69D00B6BCDB /* pokedexUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7999BAC2822B69D00B6BCDB /* pokedexUITestsLaunchTests.swift */; };
+		A7999BBB2822B9D800B6BCDB /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7999BBA2822B9D800B6BCDB /* APIManager.swift */; };
+		A7999BBE2822BA1900B6BCDB /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7999BBD2822BA1900B6BCDB /* HTTPError.swift */; };
+		A7999BC02822BA4B00B6BCDB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7999BBF2822BA4B00B6BCDB /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		A7999BA62822B69D00B6BCDB /* pokedexUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pokedexUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7999BAA2822B69D00B6BCDB /* pokedexUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pokedexUITests.swift; sourceTree = "<group>"; };
 		A7999BAC2822B69D00B6BCDB /* pokedexUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pokedexUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A7999BBA2822B9D800B6BCDB /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		A7999BBD2822BA1900B6BCDB /* HTTPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
+		A7999BBF2822BA4B00B6BCDB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +100,13 @@
 		A7999B8E2822B69B00B6BCDB /* pokedex */ = {
 			isa = PBXGroup;
 			children = (
+				A7999BBC2822BA0300B6BCDB /* Enumerations */,
+				A7999BB92822B9C200B6BCDB /* API */,
 				A7999B8F2822B69B00B6BCDB /* pokedexApp.swift */,
 				A7999B912822B69B00B6BCDB /* ContentView.swift */,
 				A7999B932822B69D00B6BCDB /* Assets.xcassets */,
 				A7999B952822B69D00B6BCDB /* Preview Content */,
+				A7999BBF2822BA4B00B6BCDB /* Constants.swift */,
 			);
 			path = pokedex;
 			sourceTree = "<group>";
@@ -125,6 +134,22 @@
 				A7999BAC2822B69D00B6BCDB /* pokedexUITestsLaunchTests.swift */,
 			);
 			path = pokedexUITests;
+			sourceTree = "<group>";
+		};
+		A7999BB92822B9C200B6BCDB /* API */ = {
+			isa = PBXGroup;
+			children = (
+				A7999BBA2822B9D800B6BCDB /* APIManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		A7999BBC2822BA0300B6BCDB /* Enumerations */ = {
+			isa = PBXGroup;
+			children = (
+				A7999BBD2822BA1900B6BCDB /* HTTPError.swift */,
+			);
+			path = Enumerations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +282,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7999BC02822BA4B00B6BCDB /* Constants.swift in Sources */,
+				A7999BBE2822BA1900B6BCDB /* HTTPError.swift in Sources */,
+				A7999BBB2822B9D800B6BCDB /* APIManager.swift in Sources */,
 				A7999B922822B69B00B6BCDB /* ContentView.swift in Sources */,
 				A7999B902822B69B00B6BCDB /* pokedexApp.swift in Sources */,
 			);
