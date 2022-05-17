@@ -26,8 +26,7 @@
 		A7999BDC2822CBED00B6BCDB /* BackpackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7999BDB2822CBED00B6BCDB /* BackpackView.swift */; };
 		A7999BE22822CDD700B6BCDB /* RenderImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7999BE12822CDD700B6BCDB /* RenderImage.swift */; };
 		A7999BE52823E94E00B6BCDB /* EmptyBackpackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7999BE42823E94E00B6BCDB /* EmptyBackpackView.swift */; };
-		A7999BE82823F2D400B6BCDB /* SearchPokemonButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7999BE72823F2D400B6BCDB /* SearchPokemonButton.swift */; };
-		A7999BEA2824272700B6BCDB /* SearchPokemonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7999BE92824272700B6BCDB /* SearchPokemonViewModel.swift */; };
+		A7DD53532833E1FB0022E369 /* BackpackViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD53522833E1FB0022E369 /* BackpackViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,8 +69,7 @@
 		A7999BDB2822CBED00B6BCDB /* BackpackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackpackView.swift; sourceTree = "<group>"; };
 		A7999BE12822CDD700B6BCDB /* RenderImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderImage.swift; sourceTree = "<group>"; };
 		A7999BE42823E94E00B6BCDB /* EmptyBackpackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyBackpackView.swift; sourceTree = "<group>"; };
-		A7999BE72823F2D400B6BCDB /* SearchPokemonButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPokemonButton.swift; sourceTree = "<group>"; };
-		A7999BE92824272700B6BCDB /* SearchPokemonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPokemonViewModel.swift; sourceTree = "<group>"; };
+		A7DD53522833E1FB0022E369 /* BackpackViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackpackViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				A7999BDB2822CBED00B6BCDB /* BackpackView.swift */,
+				A7DD53522833E1FB0022E369 /* BackpackViewModel.swift */,
 			);
 			path = Backpack;
 			sourceTree = "<group>";
@@ -242,7 +241,6 @@
 		A7999BDD2822CDAF00B6BCDB /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A7999BE62823F2C300B6BCDB /* Buttons */,
 				A7999BE02822CDC800B6BCDB /* RenderImage */,
 			);
 			path = Views;
@@ -262,15 +260,6 @@
 				A7999BE42823E94E00B6BCDB /* EmptyBackpackView.swift */,
 			);
 			path = EmptyBackpack;
-			sourceTree = "<group>";
-		};
-		A7999BE62823F2C300B6BCDB /* Buttons */ = {
-			isa = PBXGroup;
-			children = (
-				A7999BE72823F2D400B6BCDB /* SearchPokemonButton.swift */,
-				A7999BE92824272700B6BCDB /* SearchPokemonViewModel.swift */,
-			);
-			path = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -404,8 +393,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7999BC02822BA4B00B6BCDB /* Constants.swift in Sources */,
-				A7999BE82823F2D400B6BCDB /* SearchPokemonButton.swift in Sources */,
-				A7999BEA2824272700B6BCDB /* SearchPokemonViewModel.swift in Sources */,
 				A7999BBE2822BA1900B6BCDB /* HTTPError.swift in Sources */,
 				A7999BBB2822B9D800B6BCDB /* APIManager.swift in Sources */,
 				A7999BC82822C55400B6BCDB /* ServerBaseResponse.swift in Sources */,
@@ -419,6 +406,7 @@
 				A7999BD42822C9BE00B6BCDB /* PokemonRepository.swift in Sources */,
 				A7999BC32822C3CA00B6BCDB /* Pokemon.swift in Sources */,
 				A7999BCF2822C86300B6BCDB /* GetPokemonUseCase.swift in Sources */,
+				A7DD53532833E1FB0022E369 /* BackpackViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
