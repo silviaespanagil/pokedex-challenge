@@ -15,7 +15,7 @@ struct EmptyBackpackView: View {
 
             HStack {
                 
-                Text("Looks like your backpack is empty :(. Search and catch a Pokémon")
+                Text("Looks like your backpack is empty :(")
                     .font(.title)
                 
                 Image("")
@@ -24,7 +24,8 @@ struct EmptyBackpackView: View {
                     .padding()
                     .rotationEffect(.degrees(-22))
             }.padding(.bottom)
-            Text("Click on your Gameboy to find a Pokemon")
+            
+            Text("Click on your Gameboy to find your first Pokemon")
                 .padding(.bottom)
             
             Text("\"Some trainers have no fear. To them, this is just one more challenge.\"")
