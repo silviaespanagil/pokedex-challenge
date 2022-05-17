@@ -16,20 +16,40 @@ struct BackpackView: View {
         NavigationView {
             
             VStack {
-                if (viewModel.pokemon == nil) {
+                
                 EmptyBackpackView()
-                } else {
+                
+                if viewModel.pokemon != nil {
+                    
                     Text(viewModel.pokemon!.name)
                 }
-                Button {
-                    viewModel.getPokemon()
-                } label: {
+                
+                HStack {
                     
-                Image("")
-                    .renderImage(url: URL(string: "https://media3.giphy.com/media/eh6F4t0Pm3E6eXfumz/giphy.gif?cid=790b76111b45b3c7b3039b8372b0d6afd031df04ceb9a815&rid=giphy.gif&ct=s")!)
-                    .help("Click to find a Pokemon")
-                    .frame(width: 100, height: 130)
-                    .padding()
+                    Button {
+                        
+                        viewModel.getPokemon()
+                    } label: {
+                        
+                        Image("")
+                            .renderImage(url: URL(string: "https://media3.giphy.com/media/eh6F4t0Pm3E6eXfumz/giphy.gif?cid=790b76111b45b3c7b3039b8372b0d6afd031df04ceb9a815&rid=giphy.gif&ct=s")!)
+                            .help("Click to find a Pokemon")
+                            .frame(width: 100, height: 130)
+                            .padding()
+                    }
+                    if viewModel.pokemon != nil {
+                        Button {
+                            
+                            //makefav
+                        } label: {
+                            
+                            Image("")
+                                .renderImage(url: URL(string: "https://media0.giphy.com/media/s21vXaSxCP0pB10I7E/giphy.gif?cid=790b761107b361d755b1e601ee54cf3cfc4d9a0d94201441&rid=giphy.gif&ct=s")!)
+                                .help("Catch your pokemon")
+                                .frame(width: 100, height: 100)
+                                .padding()
+                        }
+                    }
                 }
             }
             .toolbar {
@@ -44,6 +64,7 @@ struct BackpackView: View {
         }
     }
 }
+
 struct BackpackView_Previews: PreviewProvider {
     
     static var previews: some View {
