@@ -21,7 +21,7 @@ struct BackpackView: View {
                 
                 if viewModel.pokemon != nil {
                     
-                    Text(viewModel.pokemon!.name)
+                    PokemonCardView(name: viewModel.pokemon!.name, weight: viewModel.pokemon!.weight, height: viewModel.pokemon!.height)
                 }
                 
                 HStack {
