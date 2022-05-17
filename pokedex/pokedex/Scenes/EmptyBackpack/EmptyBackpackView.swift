@@ -12,12 +12,10 @@ struct EmptyBackpackView: View {
     var body: some View {
         
         VStack {
-            
-            Spacer()
-            
+
             HStack {
                 
-                Text("Looks like your backpack is empty :(")
+                Text("Looks like your backpack is empty :(. Search and catch a Pokémon")
                     .font(.title)
                 
                 Image("")
@@ -33,10 +31,6 @@ struct EmptyBackpackView: View {
                 .font(.footnote)
                 .foregroundColor(.gray)
             
-            HStack {
-                
-                SearchPokemonView(viewModel: SearchPokemonViewModel())
-            } .padding()
             Spacer()
         }
             .padding()
