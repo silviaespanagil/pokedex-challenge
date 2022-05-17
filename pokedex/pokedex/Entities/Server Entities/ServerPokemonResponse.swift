@@ -18,9 +18,9 @@ struct ServerPokemonResponse: Codable {
     func convertToEntity() -> Pokemon {
         
         return Pokemon(id: id,
-                       name: name,
+                       name: name.capitalizingFirstLetter(),
 //                       sprites: sprites,
-                       weight: weight,
-                       height: height)
+                       weight: String(weight),
+                       height: String(height))
     }
 }
