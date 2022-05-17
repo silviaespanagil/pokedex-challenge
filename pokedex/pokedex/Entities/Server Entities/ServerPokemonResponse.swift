@@ -11,7 +11,7 @@ struct ServerPokemonResponse: Codable {
     
     let id: Int
     let name: String
-    let sprites: String
+//    let sprites: String
     let weight: Int
     let height: Int
     
@@ -19,7 +19,7 @@ struct ServerPokemonResponse: Codable {
         
         return Pokemon(id: id,
                        name: name,
-                       sprites: sprites,
+//                       sprites: sprites,
                        weight: weight,
                        height: height)
     }

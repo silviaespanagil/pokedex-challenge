@@ -21,11 +21,11 @@ class PokemonDataSource {
         self.session = session
     }
     
-    func getPokemon(id: Int) -> AnyPublisher<ServerPokemonResponse, Error> {
+    func getPokemon() -> AnyPublisher<ServerPokemonResponse, Error> {
         
         let apiManager = APIManager(baseURL: baseURLString, session: session)
         
-        let urlRequest = getPokemonEndpoint(id: id)
+        let urlRequest = getPokemonEndpoint()
         
         return apiManager.performRequest(urlRequest: urlRequest)
     }
@@ -34,7 +34,9 @@ class PokemonDataSource {
 // MARK: Endpoints
 extension PokemonDataSource {
     
-    func getPokemonEndpoint(id: Int) -> URLRequest {
+    func getPokemonEndpoint() -> URLRequest {
+        
+        let id: Int = Int.random(in: 1..<1000)
         
         let endpoint = "\(baseURLString)\(PokemonDataSource.getPokemon)/\(id)"
         

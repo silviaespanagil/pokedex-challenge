@@ -17,9 +17,9 @@ class PokemonRepositoryImplementation: PokemonRepository {
         self.dataSource = dataSource
     }
     
-    func getPokemon(id: Int) -> AnyPublisher<Pokemon, Error> {
+    func getPokemon() -> AnyPublisher<Pokemon, Error> {
         
-        return dataSource.getPokemon(id: id).map { serverPokemon -> Pokemon in
+        return dataSource.getPokemon().map { serverPokemon -> Pokemon in
             
             let pokemon = serverPokemon.convertToEntity()
             
