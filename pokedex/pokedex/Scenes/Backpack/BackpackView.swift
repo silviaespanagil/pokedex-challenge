@@ -17,41 +17,41 @@ struct BackpackView: View {
             
             VStack {
                 
-                EmptyBackpackView()
-                
-                if viewModel.pokemon != nil {
+                if viewModel.pokemon == nil {
+                    
+                    EmptyBackpackView()
+                    
+                    Spacer()
+                    
+                    ButtonView(action: viewModel.getPokemon,
+                               image: viewModel.gameboyImage,
+                               helpText: "Find a Pokémon")
+                    
+                    Spacer()
+                    
+                } else {
+                    
+                    Spacer()
                     
                     PokemonCardView(name: viewModel.pokemon!.name, weight: viewModel.pokemon!.weight, height: viewModel.pokemon!.height)
-                }
-                
-                HStack {
                     
-                    Button {
+                    Spacer()
+                    
+                    HStack {
                         
-                        viewModel.getPokemon()
-                    } label: {
+                        ButtonView(action: viewModel.getPokemon,
+                                   image: viewModel.gameboyImage,
+                                   helpText: "Find a Pokémon")
                         
-                        Image("")
-                            .renderImage(url: URL(string: "https://media3.giphy.com/media/eh6F4t0Pm3E6eXfumz/giphy.gif?cid=790b76111b45b3c7b3039b8372b0d6afd031df04ceb9a815&rid=giphy.gif&ct=s")!)
-                            .help("Click to find a Pokemon")
-                            .frame(width: 100, height: 130)
-                            .padding()
-                    }
-                    if viewModel.pokemon != nil {
-                        Button {
+                        if viewModel.pokemon != nil {
                             
-                            //makefav
-                        } label: {
-                            
-                            Image("")
-                                .renderImage(url: URL(string: "https://media0.giphy.com/media/s21vXaSxCP0pB10I7E/giphy.gif?cid=790b761107b361d755b1e601ee54cf3cfc4d9a0d94201441&rid=giphy.gif&ct=s")!)
-                                .help("Catch your pokemon")
-                                .frame(width: 100, height: 100)
-                                .padding()
+                            ButtonView(action: viewModel.catchPokemon,
+                                       image: viewModel.pokeballImage,
+                                       helpText: "Catch the Pokémon")
                         }
                     }
-                }
-            }
+                    Spacer()
+                }}
             .toolbar {
                 
                 ToolbarItem(placement: .principal) {
