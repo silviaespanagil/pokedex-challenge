@@ -33,7 +33,7 @@ struct BackpackView: View {
                     
                     Spacer()
                     
-                    PokemonCardView(name: viewModel.pokemon!.name, weight: viewModel.pokemon!.weight, height: viewModel.pokemon!.height)
+                    PokemonCardView(name: viewModel.pokemon!.name, weight: viewModel.pokemon!.weight, height: viewModel.pokemon!.height, image: viewModel.pokemon!.sprites.url)
                     
                     Spacer()
                     

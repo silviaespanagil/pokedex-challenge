@@ -30,6 +30,8 @@
 		A7DD53572833EC750022E369 /* PokemonCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD53562833EC750022E369 /* PokemonCardView.swift */; };
 		A7DD535A2833F2CC0022E369 /* String+CapitalizeFirstLetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD53592833F2CC0022E369 /* String+CapitalizeFirstLetter.swift */; };
 		A7DD535E2834DD760022E369 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD535D2834DD760022E369 /* ButtonView.swift */; };
+		A7DD536028350C280022E369 /* Sprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD535F28350C280022E369 /* Sprite.swift */; };
+		A7DD536228350D960022E369 /* ServerSpritesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD536128350D960022E369 /* ServerSpritesResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,8 @@
 		A7DD53562833EC750022E369 /* PokemonCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCardView.swift; sourceTree = "<group>"; };
 		A7DD53592833F2CC0022E369 /* String+CapitalizeFirstLetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+CapitalizeFirstLetter.swift"; sourceTree = "<group>"; };
 		A7DD535D2834DD760022E369 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		A7DD535F28350C280022E369 /* Sprite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sprite.swift; sourceTree = "<group>"; };
+		A7DD536128350D960022E369 /* ServerSpritesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerSpritesResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				A7999BC22822C3CA00B6BCDB /* Pokemon.swift */,
+				A7DD535F28350C280022E369 /* Sprite.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -205,6 +210,7 @@
 			children = (
 				A7999BC72822C55400B6BCDB /* ServerBaseResponse.swift */,
 				A7999BC92822C5E100B6BCDB /* ServerPokemonResponse.swift */,
+				A7DD536128350D960022E369 /* ServerSpritesResponse.swift */,
 			);
 			path = "Server Entities";
 			sourceTree = "<group>";
@@ -434,10 +440,12 @@
 				A7999BCA2822C5E100B6BCDB /* ServerPokemonResponse.swift in Sources */,
 				A7999BE52823E94E00B6BCDB /* EmptyBackpackView.swift in Sources */,
 				A7DD535E2834DD760022E369 /* ButtonView.swift in Sources */,
+				A7DD536028350C280022E369 /* Sprite.swift in Sources */,
 				A7999BD22822C8D800B6BCDB /* PokemonDataSource.swift in Sources */,
 				A7999BD62822CA0200B6BCDB /* PokemonRepositoryImplementation.swift in Sources */,
 				A7999B902822B69B00B6BCDB /* pokedexApp.swift in Sources */,
 				A7999BDC2822CBED00B6BCDB /* BackpackView.swift in Sources */,
+				A7DD536228350D960022E369 /* ServerSpritesResponse.swift in Sources */,
 				A7999BD42822C9BE00B6BCDB /* PokemonRepository.swift in Sources */,
 				A7999BC32822C3CA00B6BCDB /* Pokemon.swift in Sources */,
 				A7999BCF2822C86300B6BCDB /* GetPokemonUseCase.swift in Sources */,

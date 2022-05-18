@@ -12,12 +12,14 @@ struct PokemonCardView: View {
     var name: String
     var weight: String
     var height: String
+    var image: String
     
-    public init(name: String, weight: String, height: String) {
+    public init(name: String, weight: String, height: String, image: String) {
         
         self.name = name
         self.weight = weight
         self.height = height
+        self.image = image
     }
     
     var body: some View {
@@ -30,8 +32,8 @@ struct PokemonCardView: View {
                 .foregroundColor(.black)
                 .font(.title)
                 .fontWeight(.bold)
-                .multilineTextAlignment(.center)
-                .padding()
+                .fixedSize(horizontal: false, vertical: true)
+                .padding([.top, .bottom])
             
             Spacer()
             
@@ -74,9 +76,8 @@ struct PokemonCardView: View {
         .frame(width: 250, height: 200)
         .background(
             ZStack {
-                // TODO: CHANGE IMAGE TO API IMAGE
                 Image("")
-                    .renderImage(url: URL(string: "https://images.pexels.com/photos/1716861/pexels-photo-1716861.jpeg?cs=srgb&dl=pexels-carolina-castilla-arias-1716861.jpg&fm=jpg")!)
+                    .renderImage(url: URL(string: image)!)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                 Color(.yellow).opacity(0.5)
@@ -89,6 +90,6 @@ struct PokemonCardView: View {
 
 struct PokemonCardView_Previews: PreviewProvider {
     static var previews: some View {
-        PokemonCardView(name: "Charmander", weight: "22", height: "345")
+        PokemonCardView(name: "Charmander", weight: "22", height: "345", image: "https://images.pexels.com/photos/1716861/pexels-photo-1716861.jpeg?cs=srgb&dl=pexels-carolina-castilla-arias-1716861.jpg&fm=jpg")
     }
 }
