@@ -22,7 +22,7 @@ struct PokemonCardView: View {
     
     var body: some View {
         
-        VStack() {
+        VStack {
             
             Spacer()
             
