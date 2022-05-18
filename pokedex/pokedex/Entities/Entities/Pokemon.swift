@@ -11,7 +11,7 @@ struct Pokemon: Identifiable {
     
     let id: Int
     let name: String
-//    let sprites: String
+    let sprites: Sprite
     let weight: String
     let height: String
 }
