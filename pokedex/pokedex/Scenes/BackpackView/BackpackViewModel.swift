@@ -6,12 +6,14 @@
 //
 
 import Foundation
+import SwiftUI
 import Combine
 
 class BackpackViewModel: ObservableObject {
     
     @Published public private(set) var pokemon: Pokemon?
     @Published public private(set) var showProgressView = false
+    @Published var showHelp = false
     
     // Values
     
@@ -51,5 +53,10 @@ class BackpackViewModel: ObservableObject {
     
     func catchPokemon() {
         SavePokemonUseCase().execute(pokemon: pokemon!)
+    }
+    
+    func toggleHelp() {
+        
+        showHelp.toggle()
     }
 }

@@ -25,7 +25,8 @@ struct BackpackView: View {
                     
                     ButtonView(action: viewModel.getPokemon,
                                image: viewModel.gameboyImage,
-                               helpText: "Find a Pokémon")
+                               helpText: "Find a Pokémon",
+                               width: 90)
                     
                     Spacer()
                     
@@ -41,7 +42,8 @@ struct BackpackView: View {
                         
                         ButtonView(action: viewModel.getPokemon,
                                    image: viewModel.gameboyImage,
-                                   helpText: "Find a Pokémon")
+                                   helpText: "Find a Pokémon",
+                                   width: 90)
                         
                         if viewModel.pokemon != nil {
                             
@@ -54,16 +56,14 @@ struct BackpackView: View {
                 }}
             .toolbar {
                 
-                ToolbarItem(placement: .principal) {
-                    
-                    Text("Your backpack")
-                        .font(.largeTitle)
-                        .fontWeight(.heavy)
-                }
+                ToolbarItems(helpAction: viewModel.toggleHelp)
             }
+        }.sheet(isPresented: $viewModel.showHelp) {
+            HelpView()
         }
     }
 }
+
 
 struct BackpackView_Previews: PreviewProvider {
     
