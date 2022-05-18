@@ -10,5 +10,5 @@ import Combine
 
 protocol PokemonRepository {
     
-    func getPokemon(id: Int) -> AnyPublisher<Pokemon, Error>
+    func getPokemon() -> AnyPublisher<Pokemon, Error>
 }
