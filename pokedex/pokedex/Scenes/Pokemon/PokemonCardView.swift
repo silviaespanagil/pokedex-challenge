@@ -30,8 +30,8 @@ struct PokemonCardView: View {
                 .foregroundColor(.black)
                 .font(.title)
                 .fontWeight(.bold)
-                .multilineTextAlignment(.center)
-                .padding()
+                .fixedSize(horizontal: false, vertical: true)
+                .padding([.top, .bottom])
             
             Spacer()
             
