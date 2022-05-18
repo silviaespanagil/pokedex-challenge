@@ -11,4 +11,6 @@ import Combine
 protocol PokemonRepository {
     
     func getPokemon() -> AnyPublisher<Pokemon, Error>
+    
+    func savePokemon(pokemon: Pokemon)
 }

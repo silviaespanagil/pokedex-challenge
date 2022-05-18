@@ -50,6 +50,6 @@ class BackpackViewModel: ObservableObject {
     }
     
     func catchPokemon() {
-        // Catch pokemon
+        SavePokemonUseCase().execute(pokemon: pokemon!)
     }
 }
