@@ -29,6 +29,7 @@
 		A7DD53532833E1FB0022E369 /* BackpackViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD53522833E1FB0022E369 /* BackpackViewModel.swift */; };
 		A7DD53572833EC750022E369 /* PokemonCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD53562833EC750022E369 /* PokemonCardView.swift */; };
 		A7DD535A2833F2CC0022E369 /* String+CapitalizeFirstLetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD53592833F2CC0022E369 /* String+CapitalizeFirstLetter.swift */; };
+		A7DD535E2834DD760022E369 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD535D2834DD760022E369 /* ButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		A7DD53522833E1FB0022E369 /* BackpackViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackpackViewModel.swift; sourceTree = "<group>"; };
 		A7DD53562833EC750022E369 /* PokemonCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCardView.swift; sourceTree = "<group>"; };
 		A7DD53592833F2CC0022E369 /* String+CapitalizeFirstLetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+CapitalizeFirstLetter.swift"; sourceTree = "<group>"; };
+		A7DD535D2834DD760022E369 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,7 +231,6 @@
 			isa = PBXGroup;
 			children = (
 				A7DD53552833EC690022E369 /* Pokemon */,
-				A7999BE32823E92C00B6BCDB /* EmptyBackpack */,
 				A7999BD82822CBB000B6BCDB /* Backpack */,
 			);
 			path = Scenes;
@@ -238,6 +239,7 @@
 		A7999BD82822CBB000B6BCDB /* Backpack */ = {
 			isa = PBXGroup;
 			children = (
+				A7999BE32823E92C00B6BCDB /* EmptyBackpack */,
 				A7999BDB2822CBED00B6BCDB /* BackpackView.swift */,
 				A7DD53522833E1FB0022E369 /* BackpackViewModel.swift */,
 			);
@@ -247,6 +249,7 @@
 		A7999BDD2822CDAF00B6BCDB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A7DD535B2834DD590022E369 /* Buttons */,
 				A7999BE02822CDC800B6BCDB /* RenderImage */,
 			);
 			path = Views;
@@ -282,6 +285,14 @@
 				A7DD53592833F2CC0022E369 /* String+CapitalizeFirstLetter.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A7DD535B2834DD590022E369 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				A7DD535D2834DD760022E369 /* ButtonView.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,6 +433,7 @@
 				A7DD535A2833F2CC0022E369 /* String+CapitalizeFirstLetter.swift in Sources */,
 				A7999BCA2822C5E100B6BCDB /* ServerPokemonResponse.swift in Sources */,
 				A7999BE52823E94E00B6BCDB /* EmptyBackpackView.swift in Sources */,
+				A7DD535E2834DD760022E369 /* ButtonView.swift in Sources */,
 				A7999BD22822C8D800B6BCDB /* PokemonDataSource.swift in Sources */,
 				A7999BD62822CA0200B6BCDB /* PokemonRepositoryImplementation.swift in Sources */,
 				A7999B902822B69B00B6BCDB /* pokedexApp.swift in Sources */,

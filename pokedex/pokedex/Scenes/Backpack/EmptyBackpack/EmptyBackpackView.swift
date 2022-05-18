@@ -32,7 +32,6 @@ struct EmptyBackpackView: View {
                 .font(.footnote)
                 .foregroundColor(.gray)
             
-            Spacer()
         }
             .padding()
     }
