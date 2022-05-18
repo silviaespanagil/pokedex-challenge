@@ -40,6 +40,8 @@
 		A7DD53722835179C0022E369 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD53712835179C0022E369 /* DBManager.swift */; };
 		A7DD537428351AC40022E369 /* SavePokemonUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD537328351AC40022E369 /* SavePokemonUseCase.swift */; };
 		A7DD537728351BBC0022E369 /* PokemonLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD537628351BBC0022E369 /* PokemonLocalDataSource.swift */; };
+		A7DD537D283531300022E369 /* ToolbarItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD537C283531300022E369 /* ToolbarItems.swift */; };
+		A7DD5382283537CF0022E369 /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD5381283537CF0022E369 /* HelpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +98,8 @@
 		A7DD53712835179C0022E369 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		A7DD537328351AC40022E369 /* SavePokemonUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavePokemonUseCase.swift; sourceTree = "<group>"; };
 		A7DD537628351BBC0022E369 /* PokemonLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonLocalDataSource.swift; sourceTree = "<group>"; };
+		A7DD537C283531300022E369 /* ToolbarItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarItems.swift; sourceTree = "<group>"; };
+		A7DD5381283537CF0022E369 /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,20 +260,22 @@
 		A7999BD72822CBA400B6BCDB /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				A7DD53552833EC690022E369 /* Pokemon */,
-				A7999BD82822CBB000B6BCDB /* Backpack */,
+				A7DD5380283537B60022E369 /* HelpView */,
+				A7DD537F2835326E0022E369 /* ToolbarItems */,
+				A7DD53552833EC690022E369 /* PokemonCardView */,
+				A7999BD82822CBB000B6BCDB /* BackpackView */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
 		};
-		A7999BD82822CBB000B6BCDB /* Backpack */ = {
+		A7999BD82822CBB000B6BCDB /* BackpackView */ = {
 			isa = PBXGroup;
 			children = (
 				A7999BE32823E92C00B6BCDB /* EmptyBackpack */,
 				A7999BDB2822CBED00B6BCDB /* BackpackView.swift */,
 				A7DD53522833E1FB0022E369 /* BackpackViewModel.swift */,
 			);
-			path = Backpack;
+			path = BackpackView;
 			sourceTree = "<group>";
 		};
 		A7999BDD2822CDAF00B6BCDB /* Views */ = {
@@ -297,12 +303,12 @@
 			path = EmptyBackpack;
 			sourceTree = "<group>";
 		};
-		A7DD53552833EC690022E369 /* Pokemon */ = {
+		A7DD53552833EC690022E369 /* PokemonCardView */ = {
 			isa = PBXGroup;
 			children = (
 				A7DD53562833EC750022E369 /* PokemonCardView.swift */,
 			);
-			path = Pokemon;
+			path = PokemonCardView;
 			sourceTree = "<group>";
 		};
 		A7DD53582833F2BA0022E369 /* Extensions */ = {
@@ -339,6 +345,22 @@
 				A7DD536B283516280022E369 /* DBSprite.swift */,
 			);
 			path = DBEntities;
+			sourceTree = "<group>";
+		};
+		A7DD537F2835326E0022E369 /* ToolbarItems */ = {
+			isa = PBXGroup;
+			children = (
+				A7DD537C283531300022E369 /* ToolbarItems.swift */,
+			);
+			path = ToolbarItems;
+			sourceTree = "<group>";
+		};
+		A7DD5380283537B60022E369 /* HelpView */ = {
+			isa = PBXGroup;
+			children = (
+				A7DD5381283537CF0022E369 /* HelpView.swift */,
+			);
+			path = HelpView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -484,6 +506,7 @@
 				A7DD536E283517380022E369 /* Persistence.swift in Sources */,
 				A7DD5369283513ED0022E369 /* DBPokemon.swift in Sources */,
 				A7DD536028350C280022E369 /* Sprite.swift in Sources */,
+				A7DD5382283537CF0022E369 /* HelpView.swift in Sources */,
 				A7999BD22822C8D800B6BCDB /* PokemonDataSource.swift in Sources */,
 				A7999BD62822CA0200B6BCDB /* PokemonRepositoryImplementation.swift in Sources */,
 				A7999B902822B69B00B6BCDB /* pokedexApp.swift in Sources */,
@@ -497,6 +520,7 @@
 				A7DD5366283513BB0022E369 /* Model.xcdatamodeld in Sources */,
 				A7999BCF2822C86300B6BCDB /* GetPokemonUseCase.swift in Sources */,
 				A7DD53532833E1FB0022E369 /* BackpackViewModel.swift in Sources */,
+				A7DD537D283531300022E369 /* ToolbarItems.swift in Sources */,
 				A7DD537728351BBC0022E369 /* PokemonLocalDataSource.swift in Sources */,
 				A7DD53572833EC750022E369 /* PokemonCardView.swift in Sources */,
 			);
