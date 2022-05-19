@@ -13,6 +13,8 @@ class PokeworldViewModel: ObservableObject {
     
     @Published public private(set) var pokemon: Pokemon?
     @Published public private(set) var showProgressView = false
+    @Published public var isCatched : Bool = false
+    @Published var toastText: String?
     @Published var showHelp = false
     
     // Values
@@ -40,6 +42,7 @@ class PokeworldViewModel: ObservableObject {
                 
                 switch completion {
                 case .finished:
+                    self.isPokemonCatched()
                     break
                 case .failure:
                     break
@@ -55,8 +58,26 @@ class PokeworldViewModel: ObservableObject {
         SavePokemonUseCase().execute(pokemon: pokemon!)
     }
     
+    func isPokemonCatched() {
+        
+        toastText = ""
+        isCatched = ExistPokemonUseCase().execute(pokemon: pokemon!)
+        
+        if isCatched {
+            
+            showToast(with: "You already catched this Pokémon")
+        }
+    }
+    
     func toggleHelp() {
         
         showHelp.toggle()
+    }
+    
+    func showToast(with text: String?) {
+        
+        withAnimation {
+            toastText = text
+        }
     }
 }
