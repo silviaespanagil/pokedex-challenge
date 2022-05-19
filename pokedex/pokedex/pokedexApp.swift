@@ -11,7 +11,7 @@ import SwiftUI
 struct pokedexApp: App {
     var body: some Scene {
         WindowGroup {
-            BackpackView()
+            TabBar()
         }
     }
 }
