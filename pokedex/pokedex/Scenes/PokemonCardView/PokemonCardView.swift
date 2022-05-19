@@ -9,10 +9,17 @@ import SwiftUI
 
 struct PokemonCardView: View {
     
+    // Parameter values
     var name: String
     var weight: String
     var height: String
     var image: String
+    
+    // Card values
+    private let cardAndImageWidth: CGFloat = 220
+    private let cardHeight: CGFloat = 270
+    private let imageHeight: CGFloat = 150
+    private let cornerRadius: CGFloat = 20
     
     public init(name: String, weight: String, height: String, image: String) {
         
@@ -24,72 +31,59 @@ struct PokemonCardView: View {
     
     var body: some View {
         
-        VStack {
+        ZStack {
             
-            Spacer()
-            
-            Text(name)
-                .foregroundColor(.black)
-                .font(.title)
-                .fontWeight(.bold)
-                .fixedSize(horizontal: false, vertical: true)
-                .padding([.top, .bottom])
-            
-            Spacer()
-            
-            VStack {
+            VStack(alignment: .leading) {
                 
-                HStack {
-                    
-                    Spacer()
-                    
-                    Text("Weight")
-                        .fontWeight(.bold)
-                    
-                    Spacer()
-                    
-                    Text(weight)
-                    
-                    Spacer()
-                }
-                .padding(.bottom, 5)
-                
-                HStack {
-                    
-                    Spacer()
-                    
-                    Text("Height")
-                        .fontWeight(.bold)
-                    
-                    Spacer()
-                    
-                    Text(height)
-                    
-                    Spacer()
-                }
-                
-                Spacer()
-            }
-            Spacer()
-        }
-        .padding()
-        .frame(width: 250, height: 200)
-        .background(
-            ZStack {
                 Image("")
                     .renderImage(url: URL(string: image)!)
                     .resizable()
-                    .aspectRatio(contentMode: .fill)
-                Color(.yellow).opacity(0.5)
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: cardAndImageWidth, height: imageHeight)
+                    .clipped()
+                    .padding(.top)
+                
+                VStack(alignment: .leading, spacing: 3) {
+                    
+                    Text(name)
+                        .font(.custom("Avenir", size: 25))
+                        .fontWeight(.bold)
+                    
+                    Label(weight, systemImage: "scalemass")
+                        .font(.custom("Avenir", size: 14))
+                        .foregroundColor(.gray)
+                    
+                    Label(height, systemImage: "ruler")
+                        .font(.custom("Avenir", size: 14))
+                        .foregroundColor(.gray)
+                }.padding([.leading, .trailing, .bottom], 20)
             }
-        )
-        .cornerRadius(20)
-        .contentShape(Rectangle())
+            .background( RoundedRectangle(cornerRadius: 5)
+                            .fill(.white)
+                            .shadow(color: .gray, radius: 20, x: 2, y: 2))
+            .frame(width: cardAndImageWidth, height: cardHeight)
+            .cornerRadius(cornerRadius)
+        }
+        .multicolorGlow()
     }
+    
 }
-
 struct PokemonCardView_Previews: PreviewProvider {
     static var previews: some View {
-        PokemonCardView(name: "Charmander", weight: "22", height: "345", image: "https://images.pexels.com/photos/1716861/pexels-photo-1716861.jpeg?cs=srgb&dl=pexels-carolina-castilla-arias-1716861.jpg&fm=jpg")
+        PokemonCardView(name: "Charmander", weight: "22", height: "345", image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png")
+    }
+}
+extension View {
+    func multicolorGlow() -> some View {
+        ZStack {
+            ForEach(0..<2) { i in
+                Rectangle()
+                    .fill(LinearGradient(gradient: Gradient(colors:
+                                                                [Color.white, Color.blue]), startPoint: .topLeading, endPoint: .bottomTrailing))
+                    .mask(self.blur(radius: 10))
+                    .offset(x: 5, y: 5)
+                    .overlay(self.blur(radius: 2 - CGFloat(i * 2)))
+            }
+        }
     }
 }
