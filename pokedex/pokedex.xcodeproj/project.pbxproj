@@ -46,6 +46,8 @@
 		A7DD538728353EE50022E369 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD538628353EE50022E369 /* TabBar.swift */; };
 		A7DD538B28354A350022E369 /* PokeworldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD538A28354A350022E369 /* PokeworldView.swift */; };
 		A7DD538D28354A4A0022E369 /* PokeworldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD538C28354A4A0022E369 /* PokeworldViewModel.swift */; };
+		A7DD538F28367B850022E369 /* ExistPokemonUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD538E28367B850022E369 /* ExistPokemonUseCase.swift */; };
+		A7DD53922836807E0022E369 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD53912836807E0022E369 /* ToastView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +110,8 @@
 		A7DD538628353EE50022E369 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		A7DD538A28354A350022E369 /* PokeworldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeworldView.swift; sourceTree = "<group>"; };
 		A7DD538C28354A4A0022E369 /* PokeworldViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeworldViewModel.swift; sourceTree = "<group>"; };
+		A7DD538E28367B850022E369 /* ExistPokemonUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExistPokemonUseCase.swift; sourceTree = "<group>"; };
+		A7DD53912836807E0022E369 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,6 +255,7 @@
 			children = (
 				A7999BCE2822C86300B6BCDB /* GetPokemonUseCase.swift */,
 				A7DD537328351AC40022E369 /* SavePokemonUseCase.swift */,
+				A7DD538E28367B850022E369 /* ExistPokemonUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -292,6 +297,7 @@
 		A7999BDD2822CDAF00B6BCDB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A7DD5390283680700022E369 /* ToastView */,
 				A7DD535B2834DD590022E369 /* Buttons */,
 				A7999BE02822CDC800B6BCDB /* RenderImage */,
 			);
@@ -397,6 +403,14 @@
 				A7DD538C28354A4A0022E369 /* PokeworldViewModel.swift */,
 			);
 			path = PokeworldView;
+			sourceTree = "<group>";
+		};
+		A7DD5390283680700022E369 /* ToastView */ = {
+			isa = PBXGroup;
+			children = (
+				A7DD53912836807E0022E369 /* ToastView.swift */,
+			);
+			path = ToastView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -545,6 +559,7 @@
 				A7DD536028350C280022E369 /* Sprite.swift in Sources */,
 				A7DD5382283537CF0022E369 /* HelpView.swift in Sources */,
 				A7999BD22822C8D800B6BCDB /* PokemonDataSource.swift in Sources */,
+				A7DD53922836807E0022E369 /* ToastView.swift in Sources */,
 				A7999BD62822CA0200B6BCDB /* PokemonRepositoryImplementation.swift in Sources */,
 				A7999B902822B69B00B6BCDB /* pokedexApp.swift in Sources */,
 				A7DD537428351AC40022E369 /* SavePokemonUseCase.swift in Sources */,
@@ -561,6 +576,7 @@
 				A7DD53532833E1FB0022E369 /* BackpackViewModel.swift in Sources */,
 				A7DD538D28354A4A0022E369 /* PokeworldViewModel.swift in Sources */,
 				A7DD537D283531300022E369 /* ToolbarItems.swift in Sources */,
+				A7DD538F28367B850022E369 /* ExistPokemonUseCase.swift in Sources */,
 				A7DD537728351BBC0022E369 /* PokemonLocalDataSource.swift in Sources */,
 				A7DD53572833EC750022E369 /* PokemonCardView.swift in Sources */,
 			);

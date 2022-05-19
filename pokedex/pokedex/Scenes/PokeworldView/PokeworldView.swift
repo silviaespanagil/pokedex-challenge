@@ -64,11 +64,14 @@ struct PokeworldView: View {
                             ButtonView(action: viewModel.catchPokemon,
                                        image: viewModel.pokeballImage,
                                        helpText: "Catch the Pokémon")
+                                .disabled(viewModel.isCatched ? true : false)
+                                .blur(radius: viewModel.isCatched ? 4 : 0)
                         }
                     }
                     Spacer()
                 }
-            }
+            }.overlay(ToastView(toastText: viewModel.toastText ?? "")
+                        .offset(y: 20), alignment: .top)
             .toolbar {
                 
                 ToolbarItems(helpAction: viewModel.toggleHelp)

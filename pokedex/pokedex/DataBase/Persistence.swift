@@ -10,4 +10,5 @@ import Foundation
 protocol Persistence {
     
     func savePokemon(pokemon: Pokemon)
+    func existPokemon(pokemon: Pokemon) -> Bool
 }
