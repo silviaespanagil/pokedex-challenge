@@ -36,5 +36,10 @@ class PokemonRepositoryImplementation: PokemonRepository {
         
         return localDataSource.savePokemon(pokemon: pokemon)
     }
+    
+    func existPokemon(pokemon: Pokemon) -> Bool {
+        
+        return localDataSource.existPokemon(pokemon: pokemon)
+    }
 }
 

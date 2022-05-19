@@ -20,4 +20,9 @@ class PokemonLocalDataSource {
         
         dbManager.savePokemon(pokemon: pokemon)
     }
+    
+    func existPokemon(pokemon: Pokemon) -> Bool {
+        
+        dbManager.existPokemon(pokemon: pokemon)
+    }
 }
