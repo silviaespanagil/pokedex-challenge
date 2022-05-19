@@ -28,24 +28,16 @@ struct HelpView: View {
                     
                     HStack {
                         
-                    Image("")
-                        .renderImage(url: URL(string: "https://media3.giphy.com/media/eh6F4t0Pm3E6eXfumz/giphy.gif?cid=790b76111b45b3c7b3039b8372b0d6afd031df04ceb9a815&rid=giphy.gif&ct=s")!)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 150)
+                        Image("Gameboy")
                         
-                    Text("Click on your Gameboy to find a new Pokémon")
+                        Text("Click on your Gameboy to find a new Pokémon")
                     }
                     
                     HStack {
                         
-                    Image("")
-                        .renderImage(url: URL(string: "https://media0.giphy.com/media/s21vXaSxCP0pB10I7E/giphy.gif?cid=790b761107b361d755b1e601ee54cf3cfc4d9a0d94201441&rid=giphy.gif&ct=ss")!)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 150)
-                        
-                    Text("When you find a Pokémon you like, catch it with the Pokeball")
+                        Image("Pokeball")
+
+                        Text("When you find a Pokémon you like, catch it with the Pokeball")
                     }
                 }
                 
@@ -53,8 +45,17 @@ struct HelpView: View {
                 
                 Spacer()
                 
-                Text("Go to your backpack 🎒 to check all the catched Pokémons")
-                Text("Go back to the world 🌍 to find new ones for your collection")
+                HStack {
+                    
+                    Image("Backpack")
+                    Text("Go to your backpack to check all the catched Pokémons")
+                }
+                
+                HStack {
+                    
+                    Image("Pokeworld")
+                    Text("Go back to the world to find new Pokémons for your collection")
+                }
                 
                 Spacer()
             }
