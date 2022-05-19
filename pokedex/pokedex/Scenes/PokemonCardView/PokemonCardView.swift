@@ -68,22 +68,28 @@ struct PokemonCardView: View {
     }
     
 }
-struct PokemonCardView_Previews: PreviewProvider {
-    static var previews: some View {
-        PokemonCardView(name: "Charmander", weight: "22", height: "345", image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png")
-    }
-}
+
 extension View {
+    
     func multicolorGlow() -> some View {
+        
         ZStack {
+            
             ForEach(0..<2) { i in
+                
                 Rectangle()
                     .fill(LinearGradient(gradient: Gradient(colors:
                                                                 [Color.white, Color.blue]), startPoint: .topLeading, endPoint: .bottomTrailing))
                     .mask(self.blur(radius: 10))
                     .offset(x: 5, y: 5)
-                    .overlay(self.blur(radius: 2 - CGFloat(i * 2)))
+                    .overlay(self.blur(radius: 5 - CGFloat(i * 5)))
             }
         }
+    }
+}
+
+struct PokemonCardView_Previews: PreviewProvider {
+    static var previews: some View {
+        PokemonCardView(name: "Bulbasaur", weight: "22", height: "345", image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png")
     }
 }
