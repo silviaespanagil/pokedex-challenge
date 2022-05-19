@@ -68,7 +68,8 @@ struct PokeworldView: View {
                     }
                     Spacer()
                 }
-            }
+            }.overlay(ToastView(toastText: viewModel.toastText ?? "")
+                        .offset(y: 20), alignment: .top)
             .toolbar {
                 
                 ToolbarItems(helpAction: viewModel.toggleHelp)
