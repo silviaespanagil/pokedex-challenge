@@ -29,10 +29,8 @@ struct ButtonView: View {
             self.action()
         }) {
             
-            Image("")
-                .renderImage(url: URL(string: image)!)
+            Image(image)
                 .help(helpText)
-                .frame(width: width, height: 120)
                 .padding()
         }
     }
