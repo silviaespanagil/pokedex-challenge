@@ -48,6 +48,7 @@
 		A7DD538D28354A4A0022E369 /* PokeworldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD538C28354A4A0022E369 /* PokeworldViewModel.swift */; };
 		A7DD538F28367B850022E369 /* ExistPokemonUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD538E28367B850022E369 /* ExistPokemonUseCase.swift */; };
 		A7DD53922836807E0022E369 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD53912836807E0022E369 /* ToastView.swift */; };
+		A7DD53942837B8430022E369 /* GetCatchedPokemonsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD53932837B8430022E369 /* GetCatchedPokemonsUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +113,7 @@
 		A7DD538C28354A4A0022E369 /* PokeworldViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeworldViewModel.swift; sourceTree = "<group>"; };
 		A7DD538E28367B850022E369 /* ExistPokemonUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExistPokemonUseCase.swift; sourceTree = "<group>"; };
 		A7DD53912836807E0022E369 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		A7DD53932837B8430022E369 /* GetCatchedPokemonsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCatchedPokemonsUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,6 +258,7 @@
 				A7999BCE2822C86300B6BCDB /* GetPokemonUseCase.swift */,
 				A7DD537328351AC40022E369 /* SavePokemonUseCase.swift */,
 				A7DD538E28367B850022E369 /* ExistPokemonUseCase.swift */,
+				A7DD53932837B8430022E369 /* GetCatchedPokemonsUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -565,6 +568,7 @@
 				A7DD537428351AC40022E369 /* SavePokemonUseCase.swift in Sources */,
 				A7DD538728353EE50022E369 /* TabBar.swift in Sources */,
 				A7999BDC2822CBED00B6BCDB /* BackpackView.swift in Sources */,
+				A7DD53942837B8430022E369 /* GetCatchedPokemonsUseCase.swift in Sources */,
 				A7DD536228350D960022E369 /* ServerSpritesResponse.swift in Sources */,
 				A7DD536C283516280022E369 /* DBSprite.swift in Sources */,
 				A7999BD42822C9BE00B6BCDB /* PokemonRepository.swift in Sources */,

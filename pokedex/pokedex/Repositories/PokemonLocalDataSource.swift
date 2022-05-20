@@ -25,4 +25,9 @@ class PokemonLocalDataSource {
         
         dbManager.existPokemon(pokemon: pokemon)
     }
+    
+    func getCatchedPokemons() -> [Pokemon] {
+        
+        dbManager.getCatchedPokemons()
+    }
 }

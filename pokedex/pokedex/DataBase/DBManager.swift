@@ -34,7 +34,7 @@ class DBManager: Persistence {
         dbPokemon.height = pokemon.height
         
         dbPokemon.sprite = dbSprite
-
+        
         coreDataStack.saveContext()
     }
     
@@ -53,10 +53,33 @@ class DBManager: Persistence {
             
         } catch let error as NSError {
             
-            print("Could not fetch for delete. \(error), \(error.userInfo)")
+            print("Could not fetch. \(error), \(error.userInfo)")
             
             return false
         }
+    }
+    
+    func getCatchedPokemons() -> [Pokemon] {
         
+        var pokemons: [Pokemon] = []
+        
+        let fetchRequest = NSFetchRequest<DBPokemon>(entityName: "DBPokemon")
+        
+        do {
+            
+            let dbPokemons = try coreDataStack.managedContext.fetch(fetchRequest)
+            
+            for dbPokemon in dbPokemons {
+                
+                let pokemon = dbPokemon.convertToEntity()
+                pokemons.append(pokemon)
+            }
+            
+        } catch let error as NSError {
+            
+            print("Could not fetch. \(error), \(error.userInfo)")
+        }
+        
+        return pokemons
     }
 }
