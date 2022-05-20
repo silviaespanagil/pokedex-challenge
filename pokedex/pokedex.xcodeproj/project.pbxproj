@@ -49,6 +49,7 @@
 		A7DD538F28367B850022E369 /* ExistPokemonUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD538E28367B850022E369 /* ExistPokemonUseCase.swift */; };
 		A7DD53922836807E0022E369 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD53912836807E0022E369 /* ToastView.swift */; };
 		A7DD53942837B8430022E369 /* GetCatchedPokemonsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD53932837B8430022E369 /* GetCatchedPokemonsUseCase.swift */; };
+		A7DD53982837E11A0022E369 /* CatchedPokemonCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD53972837E11A0022E369 /* CatchedPokemonCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +115,7 @@
 		A7DD538E28367B850022E369 /* ExistPokemonUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExistPokemonUseCase.swift; sourceTree = "<group>"; };
 		A7DD53912836807E0022E369 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
 		A7DD53932837B8430022E369 /* GetCatchedPokemonsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCatchedPokemonsUseCase.swift; sourceTree = "<group>"; };
+		A7DD53972837E11A0022E369 /* CatchedPokemonCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchedPokemonCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,7 +283,7 @@
 				A7DD538328353E960022E369 /* TabBar */,
 				A7DD5380283537B60022E369 /* HelpView */,
 				A7DD537F2835326E0022E369 /* ToolbarItems */,
-				A7DD53552833EC690022E369 /* PokemonCardView */,
+				A7DD53552833EC690022E369 /* CardViews */,
 				A7999BD82822CBB000B6BCDB /* BackpackView */,
 			);
 			path = Scenes;
@@ -323,12 +325,13 @@
 			path = EmptyBackpack;
 			sourceTree = "<group>";
 		};
-		A7DD53552833EC690022E369 /* PokemonCardView */ = {
+		A7DD53552833EC690022E369 /* CardViews */ = {
 			isa = PBXGroup;
 			children = (
 				A7DD53562833EC750022E369 /* PokemonCardView.swift */,
+				A7DD53972837E11A0022E369 /* CatchedPokemonCardView.swift */,
 			);
-			path = PokemonCardView;
+			path = CardViews;
 			sourceTree = "<group>";
 		};
 		A7DD53582833F2BA0022E369 /* Extensions */ = {
@@ -565,6 +568,7 @@
 				A7DD53922836807E0022E369 /* ToastView.swift in Sources */,
 				A7999BD62822CA0200B6BCDB /* PokemonRepositoryImplementation.swift in Sources */,
 				A7999B902822B69B00B6BCDB /* pokedexApp.swift in Sources */,
+				A7DD53982837E11A0022E369 /* CatchedPokemonCardView.swift in Sources */,
 				A7DD537428351AC40022E369 /* SavePokemonUseCase.swift in Sources */,
 				A7DD538728353EE50022E369 /* TabBar.swift in Sources */,
 				A7999BDC2822CBED00B6BCDB /* BackpackView.swift in Sources */,
