@@ -55,7 +55,14 @@ class PokeworldViewModel: ObservableObject {
     }
     
     func catchPokemon() {
+        
+        isPokemonCatched()
+        
+        if !isCatched {
+            
         SavePokemonUseCase().execute(pokemon: pokemon!)
+        toastText = "Gotcha!"
+        }
     }
     
     func isPokemonCatched() {

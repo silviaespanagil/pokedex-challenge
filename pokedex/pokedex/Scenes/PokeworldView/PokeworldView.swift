@@ -28,9 +28,11 @@ struct PokeworldView: View {
                          
                          This world is inhabited by creatures called Pokémon! For some people, Pokémon are pets. Others use them for fights. Myself...I study Pokémon as a profession.\"
                          """)
+                            .font(.custom("Avenir", size: 16))
                             .padding(.bottom)
                         Divider()
                         Text("Click on your gameboy to find a Pokémon")
+                            .font(.custom("Avenir", size: 22))
                             .padding(.top)
                         
                         Spacer()

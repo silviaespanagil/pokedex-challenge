@@ -17,15 +17,23 @@ struct BackpackView: View {
             
             VStack {
                 
+                if viewModel.pokemons.isEmpty {
+                    
+                    EmptyBackpackView()
+                }
                 ScrollView {
                     
-                ForEach(viewModel.pokemons) { pokemon in
-                     
-                    Text(pokemon.name)
-                }}
-        }.toolbar {
+                    LazyVGrid(columns: viewModel.threeColumnGrid) {
+                        
+                        ForEach(viewModel.pokemons) { pokemon in
+                            
+                            CatchedPokemonCardView(image: pokemon.sprites.url, name: pokemon.name)
+                        }.padding()
+                    }
+                }.padding()
+            }.toolbar {
                 
-            ToolbarItems(helpAction: viewModel.toggleHelp, navigationTitle: Tab.backpack.rawValue.capitalizingFirstLetter())
+                ToolbarItems(helpAction: viewModel.toggleHelp, navigationTitle: Tab.backpack.rawValue.capitalizingFirstLetter())
             }
         }.onAppear {
             

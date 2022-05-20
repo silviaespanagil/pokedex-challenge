@@ -57,7 +57,7 @@ struct HelpView: View {
                 }
                 
                 Spacer()
-            }
+            }.font(.custom("Avenir", size: 18))
             .navigationTitle("HOW TO PLAY")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {

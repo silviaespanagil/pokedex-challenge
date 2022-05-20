@@ -57,10 +57,12 @@ struct PokemonCardView: View {
                         .font(.custom("Avenir", size: 14))
                         .foregroundColor(.gray)
                 }.padding([.leading, .trailing, .bottom], 20)
-            }
-            .background( RoundedRectangle(cornerRadius: 5)
-                            .fill(.white)
-                            .shadow(color: .gray, radius: 20, x: 2, y: 2))
+            }.background(RoundedRectangle(cornerRadius: 8)
+                            .foregroundColor(Color.yellow)
+                            .shadow(color: Color.gray ,
+                                    radius: 2,
+                                    x: 0,
+                                    y: 2))
             .frame(width: cardAndImageWidth, height: cardHeight)
             .cornerRadius(cornerRadius)
         }
@@ -79,7 +81,7 @@ extension View {
                 
                 Rectangle()
                     .fill(LinearGradient(gradient: Gradient(colors:
-                                                                [Color.white, Color.blue]), startPoint: .topLeading, endPoint: .bottomTrailing))
+                                                                [Color.white, Color.gray]), startPoint: .topLeading, endPoint: .bottomTrailing))
                     .mask(self.blur(radius: 10))
                     .offset(x: 5, y: 5)
                     .overlay(self.blur(radius: 5 - CGFloat(i * 5)))
