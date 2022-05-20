@@ -13,7 +13,28 @@ struct BackpackView: View {
     
     var body: some View {
         
-        Text("Here there will be saved pokemons")
+        NavigationView {
+            
+            VStack {
+                
+                ScrollView {
+                    
+                ForEach(viewModel.pokemons) { pokemon in
+                     
+                    Text(pokemon.name)
+                }}
+        }.toolbar {
+                
+            ToolbarItems(helpAction: viewModel.toggleHelp, navigationTitle: Tab.backpack.rawValue.capitalizingFirstLetter())
+            }
+        }.onAppear {
+            
+            viewModel.getCatchedPokemons()
+        }
+        .sheet(isPresented: $viewModel.showHelp) {
+            
+            HelpView()
+        }
     }
 }
 
