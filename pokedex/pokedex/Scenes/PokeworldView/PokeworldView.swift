@@ -26,7 +26,7 @@ struct PokeworldView: View {
                          
                          My name is Oak! People call me the Pokémon Prof!
                          
-                         This world is inhabited by creatures called Pokémon! For some people, pokémon are pets. Others use them for fights. Myself...I study Pokémon as a profession.\"
+                         This world is inhabited by creatures called Pokémon! For some people, Pokémon are pets. Others use them for fights. Myself...I study Pokémon as a profession.\"
                          """)
                             .padding(.bottom)
                         Divider()
@@ -74,7 +74,7 @@ struct PokeworldView: View {
                         .offset(y: 20), alignment: .top)
             .toolbar {
                 
-                ToolbarItems(helpAction: viewModel.toggleHelp)
+                ToolbarItems(helpAction: viewModel.toggleHelp, navigationTitle: Tab.pokeworld.rawValue.capitalizingFirstLetter())
             }
         }.sheet(isPresented: $viewModel.showHelp) {
             HelpView()

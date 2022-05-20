@@ -41,5 +41,10 @@ class PokemonRepositoryImplementation: PokemonRepository {
         
         return localDataSource.existPokemon(pokemon: pokemon)
     }
+    
+    func getCatchedPokemons() -> [Pokemon] {
+        
+        return localDataSource.getCatchedPokemons()
+    }
 }
 

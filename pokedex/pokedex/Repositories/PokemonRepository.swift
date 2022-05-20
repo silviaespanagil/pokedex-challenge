@@ -14,4 +14,5 @@ protocol PokemonRepository {
     
     func savePokemon(pokemon: Pokemon)
     func existPokemon(pokemon: Pokemon) -> Bool
+    func getCatchedPokemons() -> [Pokemon]
 }

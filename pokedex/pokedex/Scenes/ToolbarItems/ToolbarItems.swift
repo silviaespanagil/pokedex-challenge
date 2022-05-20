@@ -10,17 +10,19 @@ import SwiftUI
 struct ToolbarItems: ToolbarContent {
     
     var helpAction: () -> Void
+    var navigationTitle: String
     
-    init(helpAction: @escaping () -> Void) {
+    init(helpAction: @escaping () -> Void, navigationTitle: String) {
         
         self.helpAction = helpAction
+        self.navigationTitle = navigationTitle
     }
     
     var body: some ToolbarContent {
         
         ToolbarItem(placement: .principal) {
             
-            Text("Pokeworld")
+            Text(navigationTitle)
                 .font(.largeTitle)
                 .fontWeight(.heavy)
         }
