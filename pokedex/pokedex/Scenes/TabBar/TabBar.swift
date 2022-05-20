@@ -21,6 +21,7 @@ struct TabBar: View {
                     VStack{
                         
                         Image("Pokeworld")
+                            .padding(.top, 10)
                         Text("Pokeworld")
                     }
                 }
@@ -32,23 +33,11 @@ struct TabBar: View {
                     VStack{
                         
                         Image("Backpack")
+                            .padding(.top, 10)
                         Text("Backpack")
                     }
                 }
                 .tag(Tab.backpack)
-        }
-        .navigationTitle(getNavBarTitle(for: activeTab))
-        .navigationBarTitleDisplayMode(.large)
-        
-    }
-    
-    func getNavBarTitle(for tabItemType: Tab) -> String {
-        
-        switch tabItemType {
-        case .pokeworld:
-            return "Pokeworld"
-        case .backpack:
-            return "Backpack"
         }
     }
 }

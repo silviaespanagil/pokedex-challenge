@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Tab: Hashable {
+enum Tab: String, Hashable {
     case pokeworld
     case backpack
 }
