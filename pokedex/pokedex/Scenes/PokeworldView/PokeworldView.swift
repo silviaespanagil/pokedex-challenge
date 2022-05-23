@@ -72,7 +72,11 @@ struct PokeworldView: View {
                     }
                     Spacer()
                 }
-            }.overlay(ToastView(toastText: viewModel.toastText ?? "")
+            }.onDisappear {
+                viewModel.toastText = ""
+                viewModel.getPokemon()
+            }
+            .overlay(ToastView(toastText: viewModel.toastText ?? "")
                         .offset(y: 20), alignment: .top)
             .toolbar {
                 
