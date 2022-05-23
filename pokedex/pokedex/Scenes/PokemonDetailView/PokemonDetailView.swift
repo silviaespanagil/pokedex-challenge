@@ -48,22 +48,14 @@ struct PokemonDetailView: View {
                     .font(.custom("Avenir", size: 25))
                     .fontWeight(.bold)
                 
-                Label(weight, systemImage: "scalemass")
-                    .font(.custom("Avenir", size: 14))
-                    .foregroundColor(.gray)
+                LabelView(labelText: weight, labelImage: "scalemass")
                 
-                Label(height, systemImage: "ruler")
-                    .font(.custom("Avenir", size: 14))
-                    .foregroundColor(.gray)
+                LabelView(labelText: height, labelImage: "ruler")
                 
-                Label("\(experience) XP", systemImage: "star")
-                    .font(.custom("Avenir", size: 14))
-                    .foregroundColor(.gray)
+                LabelView(labelText: "\(experience) XP", labelImage: "star")
                 
-                Label("Saved on: \(date)", systemImage: "calendar")
-                    .font(.custom("Avenir", size: 14))
-                    .foregroundColor(.gray)
-                
+                LabelView(labelText: "Catched on \(date)", labelImage: "calendar")
+
             }.padding([.leading, .trailing, .bottom], 20)
         }.background(RoundedRectangle(cornerRadius: 8)
                         .foregroundColor(Color.yellow)
