@@ -170,7 +170,6 @@
 		A7999B8E2822B69B00B6BCDB /* pokedex */ = {
 			isa = PBXGroup;
 			children = (
-				A7DD5388283548BD0022E369 /* Pokeworld */,
 				A7DD5363283513A50022E369 /* DataBase */,
 				A7DD53582833F2BA0022E369 /* Extensions */,
 				A7999BDD2822CDAF00B6BCDB /* Views */,
@@ -399,13 +398,6 @@
 				A7DD538628353EE50022E369 /* TabBar.swift */,
 			);
 			path = TabBar;
-			sourceTree = "<group>";
-		};
-		A7DD5388283548BD0022E369 /* Pokeworld */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pokeworld;
 			sourceTree = "<group>";
 		};
 		A7DD538928354A1A0022E369 /* PokeworldView */ = {

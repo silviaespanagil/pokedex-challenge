@@ -14,7 +14,7 @@ protocol Persistence {
     
     // Check if Pokémon is already catched
     func existPokemon(pokemon: Pokemon) -> Bool
-//    
+   
     // Get catched Pokémons
     func getCatchedPokemons() -> [Pokemon]
 }
