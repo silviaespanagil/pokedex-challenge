@@ -18,6 +18,7 @@ extension DBPokemon {
                        name: name ?? "",
                        sprites: sprites,
                        weight: weight ?? "",
-                       height: height ?? "")
+                       height: height ?? "",
+                       experience: experience ?? "")
     }
 }

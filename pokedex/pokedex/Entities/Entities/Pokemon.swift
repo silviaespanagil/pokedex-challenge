@@ -14,4 +14,10 @@ struct Pokemon: Identifiable {
     let sprites: Sprite
     let weight: String
     let height: String
+    let experience: String
+    
+    private enum CodingKeys: String, CodingKey {
+        
+        case experience = "base_experience"
+    }
 }

@@ -32,6 +32,7 @@ class DBManager: Persistence {
         dbPokemon.name = pokemon.name
         dbPokemon.weight = pokemon.weight
         dbPokemon.height = pokemon.height
+        dbPokemon.experience = pokemon.experience
         
         dbPokemon.sprite = dbSprite
         
