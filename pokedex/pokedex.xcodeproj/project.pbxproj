@@ -50,6 +50,7 @@
 		A7DD53922836807E0022E369 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD53912836807E0022E369 /* ToastView.swift */; };
 		A7DD53942837B8430022E369 /* GetCatchedPokemonsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD53932837B8430022E369 /* GetCatchedPokemonsUseCase.swift */; };
 		A7DD53982837E11A0022E369 /* CatchedPokemonCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD53972837E11A0022E369 /* CatchedPokemonCardView.swift */; };
+		A7DD53AB283B83C10022E369 /* PokemonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD53AA283B83C10022E369 /* PokemonDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +117,7 @@
 		A7DD53912836807E0022E369 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
 		A7DD53932837B8430022E369 /* GetCatchedPokemonsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCatchedPokemonsUseCase.swift; sourceTree = "<group>"; };
 		A7DD53972837E11A0022E369 /* CatchedPokemonCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchedPokemonCardView.swift; sourceTree = "<group>"; };
+		A7DD53AA283B83C10022E369 /* PokemonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,6 +281,7 @@
 		A7999BD72822CBA400B6BCDB /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				A7DD53A9283B83A00022E369 /* PokemonDetailView */,
 				A7DD538928354A1A0022E369 /* PokeworldView */,
 				A7DD538328353E960022E369 /* TabBar */,
 				A7DD5380283537B60022E369 /* HelpView */,
@@ -417,6 +420,14 @@
 				A7DD53912836807E0022E369 /* ToastView.swift */,
 			);
 			path = ToastView;
+			sourceTree = "<group>";
+		};
+		A7DD53A9283B83A00022E369 /* PokemonDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				A7DD53AA283B83C10022E369 /* PokemonDetailView.swift */,
+			);
+			path = PokemonDetailView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -575,6 +586,7 @@
 				A7DD53942837B8430022E369 /* GetCatchedPokemonsUseCase.swift in Sources */,
 				A7DD536228350D960022E369 /* ServerSpritesResponse.swift in Sources */,
 				A7DD536C283516280022E369 /* DBSprite.swift in Sources */,
+				A7DD53AB283B83C10022E369 /* PokemonDetailView.swift in Sources */,
 				A7999BD42822C9BE00B6BCDB /* PokemonRepository.swift in Sources */,
 				A7999BC32822C3CA00B6BCDB /* Pokemon.swift in Sources */,
 				A7DD5370283517660022E369 /* CoreDataStack.swift in Sources */,
