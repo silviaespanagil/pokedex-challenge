@@ -23,6 +23,13 @@ class DBManager: Persistence {
     
     func savePokemon(pokemon: Pokemon) {
         
+        let formatter = DateFormatter()
+        formatter.dateStyle = .long
+        formatter.timeStyle = .none
+        
+        let currentDate = Date()
+        let date =  formatter.string(from: currentDate)
+        
         let dbSprite = DBSprite(context: coreDataStack.managedContext)
         dbSprite.id = UUID()
         dbSprite.url = pokemon.sprites.url
@@ -33,6 +40,7 @@ class DBManager: Persistence {
         dbPokemon.weight = pokemon.weight
         dbPokemon.height = pokemon.height
         dbPokemon.experience = pokemon.experience
+        dbPokemon.date = date
         
         dbPokemon.sprite = dbSprite
         

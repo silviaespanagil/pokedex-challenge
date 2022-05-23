@@ -15,11 +15,12 @@ struct ServerPokemonResponse: Codable {
     let weight: Int
     let height: Int
     let experience: Int
+    let date: String?
     
     private enum CodingKeys: String, CodingKey {
         
         case experience = "base_experience"
-        case id, name, sprites, weight, height
+        case id, name, sprites, weight, height, date
     }
     func convertToEntity() -> Pokemon {
         
@@ -30,6 +31,7 @@ struct ServerPokemonResponse: Codable {
                        sprites: sprites,
                        weight: String(weight),
                        height: String(height),
-                       experience: String(experience))
+                       experience: String(experience),
+                       date: date ?? "")
     }
 }

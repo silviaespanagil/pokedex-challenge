@@ -51,6 +51,7 @@
 		A7DD53942837B8430022E369 /* GetCatchedPokemonsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD53932837B8430022E369 /* GetCatchedPokemonsUseCase.swift */; };
 		A7DD53982837E11A0022E369 /* CatchedPokemonCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD53972837E11A0022E369 /* CatchedPokemonCardView.swift */; };
 		A7DD53AB283B83C10022E369 /* PokemonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD53AA283B83C10022E369 /* PokemonDetailView.swift */; };
+		A7DD53B9283BB2FC0022E369 /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD53B8283BB2FC0022E369 /* LabelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +119,7 @@
 		A7DD53932837B8430022E369 /* GetCatchedPokemonsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCatchedPokemonsUseCase.swift; sourceTree = "<group>"; };
 		A7DD53972837E11A0022E369 /* CatchedPokemonCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchedPokemonCardView.swift; sourceTree = "<group>"; };
 		A7DD53AA283B83C10022E369 /* PokemonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailView.swift; sourceTree = "<group>"; };
+		A7DD53B8283BB2FC0022E369 /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -305,6 +307,7 @@
 		A7999BDD2822CDAF00B6BCDB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A7DD53B7283BB2C80022E369 /* LabelView */,
 				A7DD5390283680700022E369 /* ToastView */,
 				A7DD535B2834DD590022E369 /* Buttons */,
 				A7999BE02822CDC800B6BCDB /* RenderImage */,
@@ -428,6 +431,14 @@
 				A7DD53AA283B83C10022E369 /* PokemonDetailView.swift */,
 			);
 			path = PokemonDetailView;
+			sourceTree = "<group>";
+		};
+		A7DD53B7283BB2C80022E369 /* LabelView */ = {
+			isa = PBXGroup;
+			children = (
+				A7DD53B8283BB2FC0022E369 /* LabelView.swift */,
+			);
+			path = LabelView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -589,6 +600,7 @@
 				A7DD53AB283B83C10022E369 /* PokemonDetailView.swift in Sources */,
 				A7999BD42822C9BE00B6BCDB /* PokemonRepository.swift in Sources */,
 				A7999BC32822C3CA00B6BCDB /* Pokemon.swift in Sources */,
+				A7DD53B9283BB2FC0022E369 /* LabelView.swift in Sources */,
 				A7DD5370283517660022E369 /* CoreDataStack.swift in Sources */,
 				A7DD5366283513BB0022E369 /* Model.xcdatamodeld in Sources */,
 				A7999BCF2822C86300B6BCDB /* GetPokemonUseCase.swift in Sources */,

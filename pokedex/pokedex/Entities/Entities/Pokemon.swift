@@ -15,6 +15,7 @@ struct Pokemon: Identifiable {
     let weight: String
     let height: String
     let experience: String
+    let date: String
     
     private enum CodingKeys: String, CodingKey {
         
