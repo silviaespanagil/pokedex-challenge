@@ -20,12 +20,14 @@ struct CatchedPokemonCardView: View {
                 .renderImage(url: URL(string: image)!)
             Text(name)
                 .font(.custom("Avenir", size: 15))
+                .padding(.bottom)
         }.background(RoundedRectangle(cornerRadius: 8)
                         .foregroundColor(Color.yellow)
                         .shadow(color: Color.gray ,
                                 radius: 2,
                                 x: 0,
                                 y: 2))
+            .padding()
     }
 }
 
