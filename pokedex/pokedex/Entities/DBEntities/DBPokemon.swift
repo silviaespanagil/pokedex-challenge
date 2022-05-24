@@ -20,6 +20,7 @@ extension DBPokemon {
                        weight: weight ?? "",
                        height: height ?? "",
                        experience: experience ?? "",
-                       date: date ?? "")
+                       date: date ?? "",
+                       types: [])
     }
 }
