@@ -56,6 +56,7 @@
 		A7DD53C5283BE2890022E369 /* ServerTypesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD53C4283BE2890022E369 /* ServerTypesResponse.swift */; };
 		A7DD53C9283CCC9A0022E369 /* DBPokeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD53C8283CCC990022E369 /* DBPokeType.swift */; };
 		A7DD53CD283E39830022E369 /* ServerTypeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD53CC283E39830022E369 /* ServerTypeResponse.swift */; };
+		A7DD53CF283E7A2E0022E369 /* LabelViewWithImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD53CE283E7A2E0022E369 /* LabelViewWithImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +129,7 @@
 		A7DD53C4283BE2890022E369 /* ServerTypesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerTypesResponse.swift; sourceTree = "<group>"; };
 		A7DD53C8283CCC990022E369 /* DBPokeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBPokeType.swift; sourceTree = "<group>"; };
 		A7DD53CC283E39830022E369 /* ServerTypeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerTypeResponse.swift; sourceTree = "<group>"; };
+		A7DD53CE283E7A2E0022E369 /* LabelViewWithImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelViewWithImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -441,6 +443,7 @@
 			isa = PBXGroup;
 			children = (
 				A7DD53B8283BB2FC0022E369 /* LabelView.swift */,
+				A7DD53CE283E7A2E0022E369 /* LabelViewWithImage.swift */,
 			);
 			path = LabelView;
 			sourceTree = "<group>";
@@ -601,6 +604,7 @@
 				A7DD537428351AC40022E369 /* SavePokemonUseCase.swift in Sources */,
 				A7DD538728353EE50022E369 /* TabBar.swift in Sources */,
 				A7999BDC2822CBED00B6BCDB /* BackpackView.swift in Sources */,
+				A7DD53CF283E7A2E0022E369 /* LabelViewWithImage.swift in Sources */,
 				A7DD53942837B8430022E369 /* GetCatchedPokemonsUseCase.swift in Sources */,
 				A7DD536228350D960022E369 /* ServerSpritesResponse.swift in Sources */,
 				A7DD536C283516280022E369 /* DBSprite.swift in Sources */,
