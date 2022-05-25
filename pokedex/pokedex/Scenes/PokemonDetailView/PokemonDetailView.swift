@@ -57,11 +57,14 @@ struct PokemonDetailView: View {
                 LabelView(labelText: "\(experience) XP", labelImage: "star")
                 
                 LabelView(labelText: "Catched on \(date)", labelImage: "calendar")
-
+                
                 ForEach(types, id: \.self) { type in
-                    Text(type)
+                    
+                    if type != "" {
+                        
+                        LabelViewWithImage(imageString: type, labelText: "Type \(type)")
+                    }
                 }
-
             }.padding([.leading, .trailing, .bottom], 20)
         }.background(RoundedRectangle(cornerRadius: 8)
                         .foregroundColor(Color.yellow)
@@ -69,8 +72,7 @@ struct PokemonDetailView: View {
                                 radius: 2,
                                 x: 0,
                                 y: 2))
-//        .frame(width: imageSize)
-        .cornerRadius(cornerRadius)
+            .cornerRadius(cornerRadius)
         Spacer()
     }
 }
