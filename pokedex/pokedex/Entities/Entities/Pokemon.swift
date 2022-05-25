@@ -14,4 +14,24 @@ struct Pokemon: Identifiable {
     let sprites: Sprite
     let weight: String
     let height: String
+    let experience: String
+    let date: String
+    var types: [PokeType]
+    
+    private enum CodingKeys: String, CodingKey {
+        
+        case experience = "base_experience"
+    }
+    
+    func getTypes() -> [String] {
+        
+        var results: [String] = [""]
+        
+        for type in types {
+            
+            results.append(type.name)
+        }
+        
+        return results
+    }
 }

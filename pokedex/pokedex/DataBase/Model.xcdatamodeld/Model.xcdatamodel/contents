@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19206" systemVersion="21E258" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="DBPokemon" representedClassName="DBPokemon" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="String"/>
+        <attribute name="experience" optional="YES" attributeType="String"/>
         <attribute name="height" optional="YES" attributeType="String"/>
         <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="weight" optional="YES" attributeType="String"/>
         <relationship name="sprite" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DBSprite" inverseName="pokemon" inverseEntity="DBSprite"/>
+        <relationship name="types" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DBPokeType" inverseName="pokemon" inverseEntity="DBPokeType"/>
+    </entity>
+    <entity name="DBPokeType" representedClassName="DBPokeType" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="slot" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="pokemon" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DBPokemon" inverseName="types" inverseEntity="DBPokemon"/>
     </entity>
     <entity name="DBSprite" representedClassName="DBSprite" syncable="YES" codeGenerationType="class">
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
@@ -13,7 +22,8 @@
         <relationship name="pokemon" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DBPokemon" inverseName="sprite" inverseEntity="DBPokemon"/>
     </entity>
     <elements>
-        <element name="DBPokemon" positionX="-63" positionY="-18" width="128" height="104"/>
+        <element name="DBPokemon" positionX="-63" positionY="-18" width="128" height="149"/>
         <element name="DBSprite" positionX="-54" positionY="9" width="128" height="74"/>
+        <element name="DBPokeType" positionX="-36" positionY="63" width="128" height="89"/>
     </elements>
 </model>

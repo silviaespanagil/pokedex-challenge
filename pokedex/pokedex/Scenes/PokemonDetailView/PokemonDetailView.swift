@@ -16,12 +16,13 @@ struct PokemonDetailView: View {
     var image: String
     var experience: String
     var date: String
+    var types: [String]
     
     // Card values
     private let imageSize: CGFloat = 200
     private let cornerRadius: CGFloat = 20
     
-    public init(name: String, weight: String, height: String, image: String, experience: String, date: String) {
+    public init(name: String, weight: String, height: String, image: String, experience: String, date: String, types: [String]) {
         
         self.name = name
         self.weight = weight
@@ -29,6 +30,7 @@ struct PokemonDetailView: View {
         self.image = image
         self.experience = experience
         self.date = date
+        self.types = types
     }
     
     var body: some View {
@@ -48,22 +50,21 @@ struct PokemonDetailView: View {
                     .font(.custom("Avenir", size: 25))
                     .fontWeight(.bold)
                 
-                Label(weight, systemImage: "scalemass")
-                    .font(.custom("Avenir", size: 14))
-                    .foregroundColor(.gray)
+                LabelView(labelText: weight, labelImage: "scalemass")
                 
-                Label(height, systemImage: "ruler")
-                    .font(.custom("Avenir", size: 14))
-                    .foregroundColor(.gray)
+                LabelView(labelText: height, labelImage: "ruler")
                 
-                Label("\(experience) XP", systemImage: "star")
-                    .font(.custom("Avenir", size: 14))
-                    .foregroundColor(.gray)
+                LabelView(labelText: "\(experience) XP", labelImage: "star")
                 
-                Label("Saved on: \(date)", systemImage: "calendar")
-                    .font(.custom("Avenir", size: 14))
-                    .foregroundColor(.gray)
+                LabelView(labelText: "Catched on \(date)", labelImage: "calendar")
                 
+                ForEach(types, id: \.self) { type in
+                    
+                    if type != "" {
+                        
+                        LabelViewWithImage(imageString: type, labelText: "Type \(type)")
+                    }
+                }
             }.padding([.leading, .trailing, .bottom], 20)
         }.background(RoundedRectangle(cornerRadius: 8)
                         .foregroundColor(Color.yellow)
@@ -71,8 +72,7 @@ struct PokemonDetailView: View {
                                 radius: 2,
                                 x: 0,
                                 y: 2))
-//        .frame(width: imageSize)
-        .cornerRadius(cornerRadius)
+            .cornerRadius(cornerRadius)
         Spacer()
     }
 }
@@ -80,6 +80,6 @@ struct PokemonDetailView: View {
 
 struct PokemonDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        PokemonDetailView(name: "Bulbasaur", weight: "22", height: "345", image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png", experience: "34", date: "16/07/1987")
+        PokemonDetailView(name: "Bulbasaur", weight: "22", height: "345", image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png", experience: "34", date: "16/07/1987", types: ["grass", "water"])
     }
 }

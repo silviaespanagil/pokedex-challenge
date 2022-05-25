@@ -51,6 +51,9 @@ struct PokeworldView: View {
                     Spacer()
                     
                     PokemonCardView(name: viewModel.pokemon!.name, weight: viewModel.pokemon!.weight, height: viewModel.pokemon!.height, image: viewModel.pokemon!.sprites.url)
+                    ForEach(viewModel.pokemon?.getTypes() ?? [""], id: \.self) { type in
+                        Text(type)
+                    }
                     
                     Spacer()
                     
@@ -72,7 +75,11 @@ struct PokeworldView: View {
                     }
                     Spacer()
                 }
-            }.overlay(ToastView(toastText: viewModel.toastText ?? "")
+            }.onDisappear {
+                viewModel.toastText = ""
+                viewModel.getPokemon()
+            }
+            .overlay(ToastView(toastText: viewModel.toastText ?? "")
                         .offset(y: 20), alignment: .top)
             .toolbar {
                 
