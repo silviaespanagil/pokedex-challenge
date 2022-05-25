@@ -34,17 +34,6 @@ class DBManager: Persistence {
         dbSprite.id = UUID()
         dbSprite.url = pokemon.sprites.url
         
-        var dbPokeTypes: [DBPokeType] = []
-        for type in pokemon.types {
-            
-            let dbPokeType = DBPokeType(context: coreDataStack.managedContext)
-            dbPokeType.id = UUID()
-            dbPokeType.slot = Int32(type.slot)
-            dbPokeType.name = type.name
-       
-            dbPokeTypes.append(dbPokeType)
-        }
-        
         let dbPokemon = DBPokemon(context: coreDataStack.managedContext)
         dbPokemon.id = Int64(pokemon.id)
         dbPokemon.name = pokemon.name
@@ -54,7 +43,15 @@ class DBManager: Persistence {
         dbPokemon.date = date
         
         dbPokemon.sprite = dbSprite
-        dbPokemon.types?.addingObjects(from: dbPokeTypes)
+        
+        for type in pokemon.types {
+            
+            let dbPokeType = DBPokeType(context: coreDataStack.managedContext)
+            dbPokeType.id = UUID()
+            dbPokeType.slot = Int32(type.slot)
+            dbPokeType.name = type.name
+            dbPokeType.pokemon = dbPokemon
+        }
         
         coreDataStack.saveContext()
     }
