@@ -14,6 +14,13 @@ extension DBPokemon {
         
         let sprites = (sprite?.convertToEntity())!
         
+        var typs: [PokeType] = []
+
+        if let types = types, let dbTypes = types.allObjects as? [DBPokeType] {
+
+            typs = dbTypes.map({ $0.convertToEntity()})
+        }
+
         return Pokemon(id: Int(id),
                        name: name ?? "",
                        sprites: sprites,
@@ -21,6 +28,6 @@ extension DBPokemon {
                        height: height ?? "",
                        experience: experience ?? "",
                        date: date ?? "",
-                       types: [])
+                       types: typs)
     }
 }

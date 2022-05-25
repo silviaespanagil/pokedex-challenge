@@ -10,5 +10,5 @@ import Foundation
 struct PokeType: Decodable {
     
     let slot: Int
-    let type: TypeName
+    let name: String
 }

@@ -14,8 +14,6 @@ struct ServerTypesResponse: Codable {
     
     func convertToEntity() -> PokeType {
         
-        let type = type.converToEntity()
-        
-        return PokeType(slot: slot, type: type)
+        return PokeType(slot: slot, name: type.name)
     }
 }
