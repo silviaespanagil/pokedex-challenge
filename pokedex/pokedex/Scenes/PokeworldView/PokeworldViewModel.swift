@@ -15,7 +15,6 @@ class PokeworldViewModel: ObservableObject {
     @Published public private(set) var showProgressView = false
     @Published public var isCatched : Bool = false
     @Published var toastText: String?
-    @Published var showHelp = false
     
     // Values
     
@@ -75,12 +74,7 @@ class PokeworldViewModel: ObservableObject {
             showToast(with: "You already catched this Pokémon")
         }
     }
-    
-    func toggleHelp() {
-        
-        showHelp.toggle()
-    }
-    
+ 
     func showToast(with text: String?) {
         
         withAnimation {
