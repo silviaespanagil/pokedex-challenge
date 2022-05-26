@@ -60,10 +60,7 @@ struct PokemonDetailView: View {
                 
                 ForEach(types, id: \.self) { type in
                     
-                    if type != "" {
-                        
                         LabelViewWithImage(imageString: type, labelText: "Type \(type)")
-                    }
                 }
             }.padding([.leading, .trailing, .bottom], 20)
         }.background(RoundedRectangle(cornerRadius: 8)
