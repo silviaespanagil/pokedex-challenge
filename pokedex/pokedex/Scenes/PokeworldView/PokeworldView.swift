@@ -51,10 +51,7 @@ struct PokeworldView: View {
                     Spacer()
                     
                     PokemonCardView(name: viewModel.pokemon!.name, weight: viewModel.pokemon!.weight, height: viewModel.pokemon!.height, image: viewModel.pokemon!.sprites.url)
-                    ForEach(viewModel.pokemon?.getTypes() ?? [""], id: \.self) { type in
-                        Text(type)
-                    }
-                    
+
                     Spacer()
                     
                     HStack {

@@ -27,7 +27,7 @@ struct CatchedPokemonCardView: View {
                                 radius: 2,
                                 x: 0,
                                 y: 2))
-            .padding()
+            .padding(10)
     }
 }
 

@@ -35,7 +35,7 @@ struct PokemonDetailView: View {
     
     var body: some View {
         
-        VStack(alignment: .leading) {
+        VStack(alignment: .center) {
             
             Image("")
                 .renderImage(url: URL(string: image)!)
@@ -67,12 +67,9 @@ struct PokemonDetailView: View {
                 }
             }.padding([.leading, .trailing, .bottom], 20)
         }.background(RoundedRectangle(cornerRadius: 8)
-                        .foregroundColor(Color.yellow)
-                        .shadow(color: Color.gray ,
-                                radius: 2,
-                                x: 0,
-                                y: 2))
+                        .foregroundColor(Color.yellow))
             .cornerRadius(cornerRadius)
+            .shadow(color: .gray, radius: 2, x: 0, y: 2)
         Spacer()
     }
 }

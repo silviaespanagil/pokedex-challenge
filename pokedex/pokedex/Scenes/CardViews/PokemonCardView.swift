@@ -17,7 +17,6 @@ struct PokemonCardView: View {
     
     // Card values
     private let cardAndImageWidth: CGFloat = 220
-    private let cardHeight: CGFloat = 270
     private let imageHeight: CGFloat = 150
     private let cornerRadius: CGFloat = 20
     
@@ -48,7 +47,8 @@ struct PokemonCardView: View {
                     Text(name)
                         .font(.custom("Avenir", size: 25))
                         .fontWeight(.bold)
-                    
+                        .fixedSize(horizontal: false, vertical: true)
+
                     Label(weight, systemImage: "scalemass")
                         .font(.custom("Avenir", size: 14))
                         .foregroundColor(.gray)
@@ -58,36 +58,12 @@ struct PokemonCardView: View {
                         .foregroundColor(.gray)
                 }.padding([.leading, .trailing, .bottom], 20)
             }.background(RoundedRectangle(cornerRadius: 8)
-                            .foregroundColor(Color.yellow)
-                            .shadow(color: Color.gray ,
-                                    radius: 2,
-                                    x: 0,
-                                    y: 2))
-            .frame(width: cardAndImageWidth, height: cardHeight)
+                            .foregroundColor(Color.yellow))
+            .frame(width: cardAndImageWidth)
             .cornerRadius(cornerRadius)
-        }
-        .multicolorGlow()
+        }.shadow(color: .gray, radius: 2, x: 0, y: 2)
     }
     
-}
-
-extension View {
-    
-    func multicolorGlow() -> some View {
-        
-        ZStack {
-            
-            ForEach(0..<2) { i in
-                
-                Rectangle()
-                    .fill(LinearGradient(gradient: Gradient(colors:
-                                                                [Color.white, Color.gray]), startPoint: .topLeading, endPoint: .bottomTrailing))
-                    .mask(self.blur(radius: 10))
-                    .offset(x: 5, y: 5)
-                    .overlay(self.blur(radius: 5 - CGFloat(i * 5)))
-            }
-        }
-    }
 }
 
 struct PokemonCardView_Previews: PreviewProvider {
