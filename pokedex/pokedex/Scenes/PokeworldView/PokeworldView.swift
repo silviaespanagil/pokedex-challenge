@@ -12,9 +12,7 @@ struct PokeworldView: View {
     @StateObject var viewModel = PokeworldViewModel()
     
     var body: some View {
-        
-        NavigationView {
-            
+
             VStack {
                 
                 if viewModel.pokemon == nil {
@@ -78,13 +76,6 @@ struct PokeworldView: View {
             }
             .overlay(ToastView(toastText: viewModel.toastText ?? "")
                         .offset(y: 20), alignment: .top)
-            .toolbar {
-                
-                ToolbarItems(helpAction: viewModel.toggleHelp, navigationTitle: Tab.pokeworld.rawValue.capitalizingFirstLetter())
-            }
-        }.sheet(isPresented: $viewModel.showHelp) {
-            HelpView()
-        }
     }
 }
 

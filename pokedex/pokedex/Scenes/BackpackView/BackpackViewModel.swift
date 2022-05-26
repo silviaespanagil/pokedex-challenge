@@ -12,17 +12,11 @@ import Combine
 class BackpackViewModel: ObservableObject {
     
     @Published public private(set) var pokemons: [Pokemon] = []
-    @Published var showHelp = false
     
     var threeColumnGrid = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
     
     func getCatchedPokemons() {
         
         pokemons = GetCatchedPokemonsUseCase().execute()
-    }
-    
-    func toggleHelp() {
-        
-        showHelp.toggle()
     }
 }
