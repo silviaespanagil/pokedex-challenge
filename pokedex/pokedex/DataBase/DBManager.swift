@@ -22,7 +22,7 @@ class DBManager: Persistence {
     }
     
     func savePokemon(pokemon: Pokemon) {
-        
+        // TODO: Move formatter to extension
         let formatter = DateFormatter()
         formatter.dateStyle = .long
         formatter.timeStyle = .none
