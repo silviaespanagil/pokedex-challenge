@@ -12,8 +12,6 @@ struct BackpackView: View {
     @StateObject var viewModel = BackpackViewModel()
     
     var body: some View {
-        
-        NavigationView {
             
             VStack {
                 
@@ -34,17 +32,10 @@ struct BackpackView: View {
                         }.buttonStyle(PlainButtonStyle())
                     }
                 }.padding()
-            }.toolbar {
-                
-                ToolbarItems(helpAction: viewModel.toggleHelp, navigationTitle: Tab.backpack.rawValue.capitalizingFirstLetter())
             }
-        }.onAppear {
+        .onAppear {
             
             viewModel.getCatchedPokemons()
-        }
-        .sheet(isPresented: $viewModel.showHelp) {
-            
-            HelpView()
         }
     }
 }
