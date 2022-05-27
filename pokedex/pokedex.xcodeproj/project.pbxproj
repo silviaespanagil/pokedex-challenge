@@ -65,6 +65,8 @@
 		A7DD53E2283FB34F0022E369 /* TestCoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD53E1283FB34F0022E369 /* TestCoreDataStack.swift */; };
 		A7DD53E4283FB4850022E369 /* DBManagerUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD53E3283FB4850022E369 /* DBManagerUnitTest.swift */; };
 		A7DD53E7283FD1E10022E369 /* MockPokemonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD53E6283FD1E00022E369 /* MockPokemonRepository.swift */; };
+		A7DD53E92840C4730022E369 /* DBPokeTypeUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD53E82840C4720022E369 /* DBPokeTypeUnitTest.swift */; };
+		A7DD53EB2840C5760022E369 /* DBSpriteUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD53EA2840C5760022E369 /* DBSpriteUnitTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +148,8 @@
 		A7DD53E1283FB34F0022E369 /* TestCoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCoreDataStack.swift; sourceTree = "<group>"; };
 		A7DD53E3283FB4850022E369 /* DBManagerUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManagerUnitTest.swift; sourceTree = "<group>"; };
 		A7DD53E6283FD1E00022E369 /* MockPokemonRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPokemonRepository.swift; sourceTree = "<group>"; };
+		A7DD53E82840C4720022E369 /* DBPokeTypeUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBPokeTypeUnitTest.swift; sourceTree = "<group>"; };
+		A7DD53EA2840C5760022E369 /* DBSpriteUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBSpriteUnitTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -499,6 +503,8 @@
 			isa = PBXGroup;
 			children = (
 				A7DD53DE283F995B0022E369 /* DBPokemonUnitTest.swift */,
+				A7DD53E82840C4720022E369 /* DBPokeTypeUnitTest.swift */,
+				A7DD53EA2840C5760022E369 /* DBSpriteUnitTest.swift */,
 			);
 			path = DBEntities;
 			sourceTree = "<group>";
@@ -702,6 +708,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7DD53EB2840C5760022E369 /* DBSpriteUnitTest.swift in Sources */,
 				A7999BA12822B69D00B6BCDB /* pokedexTests.swift in Sources */,
 				A7DD53E2283FB34F0022E369 /* TestCoreDataStack.swift in Sources */,
 				A7DD53D8283F8F890022E369 /* ServerPokemonResponseUnitTests.swift in Sources */,
@@ -710,6 +717,7 @@
 				A7DD53D4283F89A50022E369 /* PokemonUnitTests.swift in Sources */,
 				A7DD53DC283F93CC0022E369 /* ServerTypesResponseUnitTest.swift in Sources */,
 				A7DD53DF283F995B0022E369 /* DBPokemonUnitTest.swift in Sources */,
+				A7DD53E92840C4730022E369 /* DBPokeTypeUnitTest.swift in Sources */,
 				A7DD53E7283FD1E10022E369 /* MockPokemonRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
