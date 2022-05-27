@@ -46,6 +46,7 @@ class MockPokemonRepository: XCTestCase {
         
         self.isSavePokemonCalled = true
     }
+    
     func existPokemon(pokemon: Pokemon) -> Bool {
         
         self.isExistPokemonCalled = true

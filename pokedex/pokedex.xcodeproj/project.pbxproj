@@ -67,6 +67,8 @@
 		A7DD53E7283FD1E10022E369 /* MockPokemonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD53E6283FD1E00022E369 /* MockPokemonRepository.swift */; };
 		A7DD53E92840C4730022E369 /* DBPokeTypeUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD53E82840C4720022E369 /* DBPokeTypeUnitTest.swift */; };
 		A7DD53EB2840C5760022E369 /* DBSpriteUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD53EA2840C5760022E369 /* DBSpriteUnitTest.swift */; };
+		A7DD53ED2840C8770022E369 /* URLProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD53EC2840C8770022E369 /* URLProtocolMock.swift */; };
+		A7DD53EF2840C8DD0022E369 /* PokemonRepositoryImplementationUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD53EE2840C8DD0022E369 /* PokemonRepositoryImplementationUnitTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -150,6 +152,8 @@
 		A7DD53E6283FD1E00022E369 /* MockPokemonRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPokemonRepository.swift; sourceTree = "<group>"; };
 		A7DD53E82840C4720022E369 /* DBPokeTypeUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBPokeTypeUnitTest.swift; sourceTree = "<group>"; };
 		A7DD53EA2840C5760022E369 /* DBSpriteUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBSpriteUnitTest.swift; sourceTree = "<group>"; };
+		A7DD53EC2840C8770022E369 /* URLProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolMock.swift; sourceTree = "<group>"; };
+		A7DD53EE2840C8DD0022E369 /* PokemonRepositoryImplementationUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonRepositoryImplementationUnitTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -522,6 +526,8 @@
 			isa = PBXGroup;
 			children = (
 				A7DD53E6283FD1E00022E369 /* MockPokemonRepository.swift */,
+				A7DD53EC2840C8770022E369 /* URLProtocolMock.swift */,
+				A7DD53EE2840C8DD0022E369 /* PokemonRepositoryImplementationUnitTest.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -713,8 +719,10 @@
 				A7DD53E2283FB34F0022E369 /* TestCoreDataStack.swift in Sources */,
 				A7DD53D8283F8F890022E369 /* ServerPokemonResponseUnitTests.swift in Sources */,
 				A7DD53E4283FB4850022E369 /* DBManagerUnitTest.swift in Sources */,
+				A7DD53EF2840C8DD0022E369 /* PokemonRepositoryImplementationUnitTest.swift in Sources */,
 				A7DD53DA283F93000022E369 /* ServerSpritesResponseUnitTest.swift in Sources */,
 				A7DD53D4283F89A50022E369 /* PokemonUnitTests.swift in Sources */,
+				A7DD53ED2840C8770022E369 /* URLProtocolMock.swift in Sources */,
 				A7DD53DC283F93CC0022E369 /* ServerTypesResponseUnitTest.swift in Sources */,
 				A7DD53DF283F995B0022E369 /* DBPokemonUnitTest.swift in Sources */,
 				A7DD53E92840C4730022E369 /* DBPokeTypeUnitTest.swift in Sources */,
