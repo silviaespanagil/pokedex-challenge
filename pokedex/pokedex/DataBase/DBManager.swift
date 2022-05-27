@@ -32,7 +32,7 @@ class DBManager: Persistence {
         
         let dbSprite = DBSprite(context: coreDataStack.managedContext)
         dbSprite.id = UUID()
-        dbSprite.url = pokemon.sprites.url
+        dbSprite.url = pokemon.sprites?.url
         
         let dbPokemon = DBPokemon(context: coreDataStack.managedContext)
         dbPokemon.id = Int64(pokemon.id)

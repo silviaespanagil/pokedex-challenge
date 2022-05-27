@@ -139,7 +139,7 @@ class DBManagerUnitTest: XCTestCase {
         XCTAssertEqual(response.count, 1)
         XCTAssertEqual(response.first?.id, 2)
         XCTAssertEqual(response.first?.name, "Charmander")
-        XCTAssertEqual(response.first?.sprites.url, "https://s2.coinmarketcap.com/static/img/coins/200x200/8303.png")
+        XCTAssertEqual(response.first?.sprites?.url, "https://s2.coinmarketcap.com/static/img/coins/200x200/8303.png")
         XCTAssertEqual(response.first?.weight, "24")
         XCTAssertEqual(response.first?.height, "45")
         XCTAssertEqual(response.first?.experience, "23")
