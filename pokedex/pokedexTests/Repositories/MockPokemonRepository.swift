@@ -9,7 +9,7 @@ import XCTest
 import Combine
 @testable import pokedex
 
-class MockPokemonRepository: XCTestCase {
+class MockPokemonRepository: PokemonRepository {
     
     var isGetPokemonCalled = false
     var isSavePokemonCalled = false
