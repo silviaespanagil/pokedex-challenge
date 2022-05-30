@@ -11,7 +11,7 @@ struct Pokemon: Identifiable {
     
     let id: Int
     let name: String
-    let sprites: Sprite
+    let sprites: Sprite?
     let weight: String
     let height: String
     let experience: String
@@ -25,7 +25,7 @@ struct Pokemon: Identifiable {
     
     func getTypes() -> [String] {
         
-        var results: [String] = [""]
+        var results: [String] = []
         
         for type in types {
             

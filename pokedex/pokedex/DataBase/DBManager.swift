@@ -22,7 +22,7 @@ class DBManager: Persistence {
     }
     
     func savePokemon(pokemon: Pokemon) {
-        
+        // TODO: Move formatter to extension
         let formatter = DateFormatter()
         formatter.dateStyle = .long
         formatter.timeStyle = .none
@@ -32,7 +32,7 @@ class DBManager: Persistence {
         
         let dbSprite = DBSprite(context: coreDataStack.managedContext)
         dbSprite.id = UUID()
-        dbSprite.url = pokemon.sprites.url
+        dbSprite.url = pokemon.sprites?.url
         
         let dbPokemon = DBPokemon(context: coreDataStack.managedContext)
         dbPokemon.id = Int64(pokemon.id)

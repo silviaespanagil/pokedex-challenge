@@ -12,7 +12,7 @@ extension DBPokemon {
     
     func convertToEntity() -> Pokemon {
         
-        let sprites = (sprite?.convertToEntity())!
+        let sprites = (sprite?.convertToEntity())
         
         var typs: [PokeType] = []
 

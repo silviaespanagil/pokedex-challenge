@@ -25,9 +25,9 @@ struct BackpackView: View {
                         
                         ForEach(viewModel.pokemons) { pokemon in
                             
-                            NavigationLink(destination: PokemonDetailView(name: pokemon.name, weight: pokemon.weight, height: pokemon.height, image: pokemon.sprites.url, experience: pokemon.experience, date: pokemon.date, types: pokemon.getTypes())) {
+                            NavigationLink(destination: PokemonDetailView(name: pokemon.name, weight: pokemon.weight, height: pokemon.height, image: pokemon.sprites!.url, experience: pokemon.experience, date: pokemon.date, types: pokemon.getTypes())) {
                                 
-                            CatchedPokemonCardView(image: pokemon.sprites.url, name: pokemon.name)
+                                CatchedPokemonCardView(image: pokemon.sprites?.url ?? "", name: pokemon.name)
                             }
                         }.buttonStyle(PlainButtonStyle())
                     }
