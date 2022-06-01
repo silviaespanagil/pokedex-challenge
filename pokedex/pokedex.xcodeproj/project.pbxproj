@@ -75,6 +75,7 @@
 		A7DD53F8284112CC0022E369 /* ExistPokemonUseCaseUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD53F7284112CC0022E369 /* ExistPokemonUseCaseUnitTest.swift */; };
 		A7DD53FA2841185B0022E369 /* GetCatchedPokemonUseCaseUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD53F92841185A0022E369 /* GetCatchedPokemonUseCaseUnitTest.swift */; };
 		A7F456B82847852A009121B9 /* PokemonLocalDataSourceUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F456B72847852A009121B9 /* PokemonLocalDataSourceUnitTest.swift */; };
+		A7F456BA2847888C009121B9 /* PokeworldViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F456B92847888C009121B9 /* PokeworldViewState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -166,6 +167,7 @@
 		A7DD53F7284112CC0022E369 /* ExistPokemonUseCaseUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExistPokemonUseCaseUnitTest.swift; sourceTree = "<group>"; };
 		A7DD53F92841185A0022E369 /* GetCatchedPokemonUseCaseUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCatchedPokemonUseCaseUnitTest.swift; sourceTree = "<group>"; };
 		A7F456B72847852A009121B9 /* PokemonLocalDataSourceUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonLocalDataSourceUnitTest.swift; sourceTree = "<group>"; };
+		A7F456B92847888C009121B9 /* PokeworldViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeworldViewState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -459,6 +461,7 @@
 			children = (
 				A7DD538A28354A350022E369 /* PokeworldView.swift */,
 				A7DD538C28354A4A0022E369 /* PokeworldViewModel.swift */,
+				A7F456B92847888C009121B9 /* PokeworldViewState.swift */,
 			);
 			path = PokeworldView;
 			sourceTree = "<group>";
@@ -706,6 +709,7 @@
 				A7DD536028350C280022E369 /* Sprite.swift in Sources */,
 				A7DD5382283537CF0022E369 /* HelpView.swift in Sources */,
 				A7999BD22822C8D800B6BCDB /* PokemonDataSource.swift in Sources */,
+				A7F456BA2847888C009121B9 /* PokeworldViewState.swift in Sources */,
 				A7DD53C3283BE1A20022E369 /* PokeType.swift in Sources */,
 				A7DD53922836807E0022E369 /* ToastView.swift in Sources */,
 				A7999BD62822CA0200B6BCDB /* PokemonRepositoryImplementation.swift in Sources */,
