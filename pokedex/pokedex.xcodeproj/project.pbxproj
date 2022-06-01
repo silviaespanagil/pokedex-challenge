@@ -335,12 +335,10 @@
 		A7999BD72822CBA400B6BCDB /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				A7DD53A9283B83A00022E369 /* PokemonDetailView */,
 				A7DD538928354A1A0022E369 /* PokeworldView */,
 				A7DD538328353E960022E369 /* TabBar */,
 				A7DD5380283537B60022E369 /* HelpView */,
 				A7DD537F2835326E0022E369 /* ToolbarItems */,
-				A7DD53552833EC690022E369 /* CardViews */,
 				A7999BD82822CBB000B6BCDB /* BackpackView */,
 			);
 			path = Scenes;
@@ -349,6 +347,7 @@
 		A7999BD82822CBB000B6BCDB /* BackpackView */ = {
 			isa = PBXGroup;
 			children = (
+				A7DD53A9283B83A00022E369 /* PokemonDetailView */,
 				A7999BE32823E92C00B6BCDB /* EmptyBackpack */,
 				A7999BDB2822CBED00B6BCDB /* BackpackView.swift */,
 				A7DD53522833E1FB0022E369 /* BackpackViewModel.swift */,
@@ -359,6 +358,7 @@
 		A7999BDD2822CDAF00B6BCDB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A7DD53552833EC690022E369 /* CardViews */,
 				A7DD53B7283BB2C80022E369 /* LabelView */,
 				A7DD5390283680700022E369 /* ToastView */,
 				A7DD535B2834DD590022E369 /* Buttons */,
