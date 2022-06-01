@@ -74,6 +74,7 @@
 		A7DD53F628410FBA0022E369 /* SavePokemonUseCaseUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD53F528410FBA0022E369 /* SavePokemonUseCaseUnitTest.swift */; };
 		A7DD53F8284112CC0022E369 /* ExistPokemonUseCaseUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD53F7284112CC0022E369 /* ExistPokemonUseCaseUnitTest.swift */; };
 		A7DD53FA2841185B0022E369 /* GetCatchedPokemonUseCaseUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DD53F92841185A0022E369 /* GetCatchedPokemonUseCaseUnitTest.swift */; };
+		A7F456B82847852A009121B9 /* PokemonLocalDataSourceUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F456B72847852A009121B9 /* PokemonLocalDataSourceUnitTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -164,6 +165,7 @@
 		A7DD53F528410FBA0022E369 /* SavePokemonUseCaseUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavePokemonUseCaseUnitTest.swift; sourceTree = "<group>"; };
 		A7DD53F7284112CC0022E369 /* ExistPokemonUseCaseUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExistPokemonUseCaseUnitTest.swift; sourceTree = "<group>"; };
 		A7DD53F92841185A0022E369 /* GetCatchedPokemonUseCaseUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCatchedPokemonUseCaseUnitTest.swift; sourceTree = "<group>"; };
+		A7F456B72847852A009121B9 /* PokemonLocalDataSourceUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonLocalDataSourceUnitTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -540,6 +542,7 @@
 				A7DD53EC2840C8770022E369 /* URLProtocolMock.swift */,
 				A7DD53EE2840C8DD0022E369 /* PokemonRepositoryImplementationUnitTest.swift */,
 				A7DD53F0284109380022E369 /* PokemonDataSourceUnitTest.swift */,
+				A7F456B72847852A009121B9 /* PokemonLocalDataSourceUnitTest.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -738,6 +741,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7DD53EB2840C5760022E369 /* DBSpriteUnitTest.swift in Sources */,
+				A7F456B82847852A009121B9 /* PokemonLocalDataSourceUnitTest.swift in Sources */,
 				A7999BA12822B69D00B6BCDB /* pokedexTests.swift in Sources */,
 				A7DD53E2283FB34F0022E369 /* TestCoreDataStack.swift in Sources */,
 				A7DD53FA2841185B0022E369 /* GetCatchedPokemonUseCaseUnitTest.swift in Sources */,
