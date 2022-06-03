@@ -12,30 +12,48 @@ struct BackpackView: View {
     @StateObject var viewModel = BackpackViewModel()
     
     var body: some View {
-            
-            VStack {
+        
+        content
+            .onAppear {
                 
-                if viewModel.pokemons.isEmpty {
-
-                    EmptyBackpackView()
-                }
-                ScrollView {
-                    
-                    LazyVGrid(columns: viewModel.threeColumnGrid) {
-                        
-                        ForEach(viewModel.pokemons) { pokemon in
-                            
-                            NavigationLink(destination: PokemonDetailView(name: pokemon.name, weight: pokemon.weight, height: pokemon.height, image: pokemon.sprites!.url, experience: pokemon.experience, date: pokemon.date, types: pokemon.getTypes())) {
-                                
-                                CatchedPokemonCardView(image: pokemon.sprites?.url ?? "", name: pokemon.name)
-                            }
-                        }.buttonStyle(PlainButtonStyle())
-                    }
-                }.padding()
+                viewModel.getCatchedPokemons()
             }
-        .onAppear {
+    }
+    
+    @ViewBuilder
+    private var content: some View {
+        
+        switch viewModel.viewState {
+        case .empty:
+            EmptyBackpackView()
+        case .loading:
+            LoadingView()
+        case .loaded:
+            loadedView()
+        }
+    }
+
+    private func loadedView() -> some View {
+        
+        VStack {
             
-            viewModel.getCatchedPokemons()
+            if viewModel.pokemons.isEmpty {
+                
+                EmptyBackpackView()
+            }
+            ScrollView {
+                
+                LazyVGrid(columns: viewModel.threeColumnGrid) {
+                    
+                    ForEach(viewModel.pokemons) { pokemon in
+                        
+                        NavigationLink(destination: PokemonDetailView(name: pokemon.name, weight: pokemon.weight, height: pokemon.height, image: pokemon.sprites!.url, experience: pokemon.experience, date: pokemon.date, types: pokemon.getTypes())) {
+                            
+                            CatchedPokemonCardView(image: pokemon.sprites?.url ?? "", name: pokemon.name)
+                        }
+                    }.buttonStyle(PlainButtonStyle())
+                }
+            }.padding()
         }
     }
 }

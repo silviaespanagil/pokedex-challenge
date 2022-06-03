@@ -7,8 +7,6 @@
 
 import Foundation
 
-import Foundation
-
 enum PokemonWorldViewState: Equatable {
     
     case empty
