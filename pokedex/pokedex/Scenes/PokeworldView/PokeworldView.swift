@@ -32,7 +32,7 @@ struct PokeworldView: View {
         case .empty:
             emptyView()
         case .loading:
-            loadingView()
+            LoadingView()
         case .failed:
             failedView()
         case .loaded:
@@ -71,28 +71,7 @@ struct PokeworldView: View {
         }
         .padding()
     }
-    
-    private func loadingView() -> some View {
-        
-        VStack(alignment: .center) {
-            
-            Spacer()
-            
-
-                Image("Pokeball")
-                .rotationEffect(.degrees(viewModel.angle))
-                .animation(.easeIn, value: viewModel.angle)
-               Text("Looking for a Pokémon to catch")
-                .font(.custom("Avenir", size: 16))
-            
-            Spacer()
-            
-        }.onAppear {
-            
-            viewModel.angle += 360
-        }
-    }
-    
+ 
     private func failedView() -> some View {
         
         VStack {
