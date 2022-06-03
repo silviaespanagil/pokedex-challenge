@@ -11,10 +11,11 @@ import Combine
 
 class PokeworldViewModel: ObservableObject {
     
+    @Published var viewState: PokemonWorldViewState = .empty
     @Published public private(set) var pokemon: Pokemon?
-    @Published public private(set) var showProgressView = false
     @Published public var isCatched : Bool = false
     @Published var toastText: String?
+    @Published var angle = 0.0
     
     // Values
     
@@ -31,19 +32,19 @@ class PokeworldViewModel: ObservableObject {
 
     func getPokemon() {
         
-        showProgressView = true
+        viewState = .loading
         
         cancellable = GetPokemonUseCase().execute()
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { completion in
-                
-                self.showProgressView = false
-                
+  
                 switch completion {
                 case .finished:
+                    self.viewState = .loaded
                     self.isPokemonCatched()
                     break
                 case .failure:
+                    self.viewState = .failed
                     break
                 }
                 
