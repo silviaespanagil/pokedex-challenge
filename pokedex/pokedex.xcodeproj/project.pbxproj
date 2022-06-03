@@ -78,6 +78,7 @@
 		A7F456BA2847888C009121B9 /* PokeworldViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F456B92847888C009121B9 /* PokeworldViewState.swift */; };
 		A7F456BC284A5623009121B9 /* BackpackViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F456BB284A5623009121B9 /* BackpackViewState.swift */; };
 		A7F456BE284A5769009121B9 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F456BD284A5769009121B9 /* LoadingView.swift */; };
+		A7F456C3284A5CF0009121B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F456C2284A5CF0009121B9 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -172,6 +173,7 @@
 		A7F456B92847888C009121B9 /* PokeworldViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeworldViewState.swift; sourceTree = "<group>"; };
 		A7F456BB284A5623009121B9 /* BackpackViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackpackViewState.swift; sourceTree = "<group>"; };
 		A7F456BD284A5769009121B9 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		A7F456C2284A5CF0009121B9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +237,7 @@
 				A7999B932822B69D00B6BCDB /* Assets.xcassets */,
 				A7999B952822B69D00B6BCDB /* Preview Content */,
 				A7999BBF2822BA4B00B6BCDB /* Constants.swift */,
+				A7F456C2284A5CF0009121B9 /* LaunchScreen.storyboard */,
 			);
 			path = pokedex;
 			sourceTree = "<group>";
@@ -679,6 +682,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7F456C3284A5CF0009121B9 /* LaunchScreen.storyboard in Resources */,
 				A7999B972822B69D00B6BCDB /* Preview Assets.xcassets in Resources */,
 				A7999B942822B69D00B6BCDB /* Assets.xcassets in Resources */,
 			);
@@ -928,6 +932,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"pokedex/Preview Content\"";
@@ -937,6 +942,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -958,6 +964,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"pokedex/Preview Content\"";
@@ -967,6 +974,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
