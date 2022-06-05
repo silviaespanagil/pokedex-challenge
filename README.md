@@ -42,7 +42,7 @@ This Swift app uses Combine to manage API calls in order to get a random Pokémo
 ### API call 📞 
 I worked with Combine to manage the API call. As one of the requirements was to generate a random number to make the call and retrieve a random Pokémon, I decided to create and id constant which value is an `Int.random(in: 1..<1000)` inside the `getPokemonEndpoint()` method. This way, everytime a Pokémon is asked for, the number generates and get into the endpoint.
 
-<img width="210" alt="" src="https://user-images.githubusercontent.com/81619759/172050119-e169dcc0-fbb1-465f-b190-326a0b9b5ef5.png">
+<img width="520" alt="" src="https://user-images.githubusercontent.com/81619759/172050119-e169dcc0-fbb1-465f-b190-326a0b9b5ef5.png">
 
 ### Pokeworld view 🗺️
 The Pokémons get via the API are rendered here. This view is empty at the beginning and shows a Gameboy Button to make the first search. Each Pokémon you encounter will be shown here and can be catched clicking on the Pokéball.
