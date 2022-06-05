@@ -73,11 +73,11 @@ The views are loaded using states: empty, loading, loaded and for the Pokeworld 
 The loading state renders an animated Pokeball with a searching message. The loaded view updates content to render the expected and sucessful view and the failed view, as stated before on this readme, shows a customize error message with the search button.
 
 ### Testing ✅
-I know this works not only because it builds on the simulator but because is tested: remote and local tests passed. 
+I know this works not only because it builds on the simulator but because is tested: remote and local data source tests passed. 
 
 ## Check out the app in motion 👀🎬
 
-Uploading Simulator Screen Recording - iPhone 12 - 2022-06-03 at 17.41.33.mov…
+https://user-images.githubusercontent.com/81619759/172050392-5fe2487c-49c2-4684-a849-b87f366f9142.mov
 
 ## Want to fork this repo? 🐑
 
